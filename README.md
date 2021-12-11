@@ -9,4 +9,4 @@ In recent years, FPGAs are becoming more popular for hardware implementation bec
 
 ### Demo Video
 
-![https://github.com/kukr/Hardware-Designing-and-Verification-of-Three-Phase-to-Sequence-Decomposer/blob/master/sequence-decomposer.jpg](https://github.com/kukr/Hardware-Designing-and-Verification-of-Three-Phase-to-Sequence-Decomposer/blob/master/3-Phase%20to%20Sequence%20Decomposer%20Demo%20Video.mp4)
+[![](https://github.com/kukr/Hardware-Designing-and-Verification-of-Three-Phase-to-Sequence-Decomposer/blob/master/sequence-decomposer.jpg)](https://github.com/kukr/Hardware-Designing-and-Verification-of-Three-Phase-to-Sequence-Decomposer/blob/master/3-Phase%20to%20Sequence%20Decomposer%20Demo%20Video.mp4)
