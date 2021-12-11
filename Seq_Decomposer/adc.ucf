@@ -1,0 +1,34 @@
+NET "clk" LOC = "AH15";
+
+NET "sw" LOC = "AC24"; //__________Sw_8
+NET "rst" LOC = "U25"; // ______sw_1
+
+
+///////   FOR---- ADC_BOARD_1
+NET "SPI_MOSI" LOC = "H33"; //_____ pin_2
+NET "AMP_CS" LOC = "F34" ;  //_____ pin_4
+NET "SPI_SCK" LOC = "H34";  //_____ pin_6
+NET "AMP_SHDN" LOC = "G33"; //_____ pin_8
+NET "AD_CONV" LOC = "G32" ; //_____ pin_10
+NET "SPI_MISO" LOC = "H32" ; //_____pin_12
+
+///////   FOR---- ADC_BOARD_2
+
+NET "SPI_MOSI_B2" LOC = "AM32"; //_____ pin_60
+NET "AMP_CS_B2" LOC = "AJ34" ;  //_____ pin_58
+NET "SPI_SCK_B2" LOC = "AM33";  //_____ pin_56
+NET "AMP_SHDN_B2" LOC = "AL33"; //_____ pin_54
+NET "AD_CONV_B2" LOC = "AL34" ; //_____ pin_52
+NET "SPI_MISO_B2" LOC = "AK32" ; //_____pin_50
+
+//_______________________________________________________
+
+///// led display
+#NET "LED[0]" LOC = "H18";
+#NET "LED[1]" LOC = "L18";
+#NET "LED[2]" LOC = "G15";
+#NET "LED[3]" LOC = "AD26";
+#NET "LED[4]" LOC = "G16";
+#NET "LED[5]" LOC = "AD25";
+#NET "LED[6]" LOC = "AD24";
+#NET "LED[7]" LOC = "AE24";

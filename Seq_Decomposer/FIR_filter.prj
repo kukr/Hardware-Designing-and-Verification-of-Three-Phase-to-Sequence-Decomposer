@@ -1,0 +1,4 @@
+verilog work "division.v"
+verilog work "FIR_order32.v"
+verilog work "DC_offset_removal.v"
+verilog work "FIR_filter.v"

@@ -1,0 +1,490 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: DC_offset_removal.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DC_offset_removal.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DC_offset_removal"
+Output Format                      : NGC
+Target Device                      : xc5vlx50t-1-ff1136
+
+---- Source Options
+Top Module Name                    : DC_offset_removal
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "DC_offset_removal.v" in library work
+Module <DC_offset_removal> compiled
+No errors in compilation
+Analysis of file <"DC_offset_removal.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <DC_offset_removal> in library <work> with parameters.
+	M = "00000000000000000000000000001110"
+	s0 = "00"
+	s1 = "01"
+	s2 = "10"
+	s3 = "11"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <DC_offset_removal>.
+	M = 32'sb00000000000000000000000000001110
+	s0 = 2'b00
+	s1 = 2'b01
+	s2 = 2'b10
+	s3 = 2'b11
+Module <DC_offset_removal> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DC_offset_removal>.
+    Related source file is "DC_offset_removal.v".
+WARNING:Xst:646 - Signal <next_state> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Vtemp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | rst                       (negative)           |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit register for signal <Vout>.
+    Found 14-bit register for signal <max_val>.
+    Found 14-bit comparator greater for signal <max_val$cmp_gt0000> created at line 69.
+    Found 14-bit register for signal <min_val>.
+    Found 14-bit comparator less for signal <min_val$cmp_lt0000> created at line 80.
+    Found 14-bit register for signal <offset>.
+    Found 15-bit adder for signal <offset$add0000> created at line 91.
+    Found 14-bit comparator greatequal for signal <old_offset_1$cmp_ge0000> created at line 89.
+    Found 15-bit comparator greatequal for signal <state$cmp_ge0000> created at line 56.
+    Found 15-bit comparator greatequal for signal <state$cmp_ge0001> created at line 64.
+    Found 15-bit comparator less for signal <state$cmp_lt0000> created at line 56.
+    Found 15-bit comparator less for signal <state$cmp_lt0001> created at line 64.
+    Found 14-bit register for signal <Vin_prev>.
+    Found 14-bit subtractor for signal <Vout$sub0000> created at line 98.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  70 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+Unit <DC_offset_removal> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 14-bit subtractor                                     : 1
+ 15-bit adder                                          : 1
+# Registers                                            : 5
+ 14-bit register                                       : 5
+# Comparators                                          : 7
+ 14-bit comparator greatequal                          : 1
+ 14-bit comparator greater                             : 1
+ 14-bit comparator less                                : 1
+ 15-bit comparator greatequal                          : 2
+ 15-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 2
+ 14-bit subtractor                                     : 1
+ 15-bit adder                                          : 1
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+# Comparators                                          : 7
+ 14-bit comparator greatequal                          : 1
+ 14-bit comparator greater                             : 1
+ 14-bit comparator less                                : 1
+ 15-bit comparator greatequal                          : 2
+ 15-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <Vin_prev_0> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_1> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_2> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_3> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_4> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_5> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_6> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_7> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_8> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_9> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_10> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_11> of sequential type is unconnected in block <DC_offset_removal>.
+WARNING:Xst:2677 - Node <Vin_prev_12> of sequential type is unconnected in block <DC_offset_removal>.
+
+Optimizing unit <DC_offset_removal> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DC_offset_removal, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DC_offset_removal.ngr
+Top Level Output File Name         : DC_offset_removal
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 198
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 15
+#      LUT4                        : 70
+#      LUT5                        : 18
+#      LUT6                        : 16
+#      MUXCY                       : 48
+#      VCC                         : 1
+#      XORCY                       : 28
+# FlipFlops/Latches                : 59
+#      FDC                         : 43
+#      FDE                         : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 15
+#      OBUF                        : 14
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              59  out of  28800     0%  
+ Number of Slice LUTs:                  120  out of  28800     0%  
+    Number used as Logic:               120  out of  28800     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    121
+   Number with an unused Flip Flop:      62  out of    121    51%  
+   Number with an unused LUT:             1  out of    121     0%  
+   Number of fully used LUT-FF pairs:    58  out of    121    47%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    480     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 59    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 43    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.879ns (Maximum Frequency: 257.828MHz)
+   Minimum input arrival time before clock: 3.811ns
+   Maximum output required time after clock: 3.259ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.879ns (frequency: 257.828MHz)
+  Total number of paths / destination ports: 10962 / 58
+-------------------------------------------------------------------------
+Delay:               3.879ns (Levels of Logic = 23)
+  Source:            max_val_0 (FF)
+  Destination:       Vout_13 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: max_val_0 to Vout_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.471   0.816  max_val_0 (max_val_0)
+     LUT4:I0->O            1   0.094   0.000  Mcompar_old_offset_1_cmp_ge0000_lut<0> (Mcompar_old_offset_1_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  Mcompar_old_offset_1_cmp_ge0000_cy<0> (Mcompar_old_offset_1_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_old_offset_1_cmp_ge0000_cy<1> (Mcompar_old_offset_1_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_old_offset_1_cmp_ge0000_cy<2> (Mcompar_old_offset_1_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_old_offset_1_cmp_ge0000_cy<3> (Mcompar_old_offset_1_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_old_offset_1_cmp_ge0000_cy<4> (Mcompar_old_offset_1_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_old_offset_1_cmp_ge0000_cy<5> (Mcompar_old_offset_1_cmp_ge0000_cy<5>)
+     MUXCY:CI->O          28   0.254   0.607  Mcompar_old_offset_1_cmp_ge0000_cy<6> (old_offset_1_cmp_ge0000)
+     LUT6:I5->O            1   0.094   0.000  Msub_Vout_sub0000_lut<0> (Msub_Vout_sub0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  Msub_Vout_sub0000_cy<0> (Msub_Vout_sub0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<1> (Msub_Vout_sub0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<2> (Msub_Vout_sub0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<3> (Msub_Vout_sub0000_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<4> (Msub_Vout_sub0000_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<5> (Msub_Vout_sub0000_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<6> (Msub_Vout_sub0000_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<7> (Msub_Vout_sub0000_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<8> (Msub_Vout_sub0000_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<9> (Msub_Vout_sub0000_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<10> (Msub_Vout_sub0000_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  Msub_Vout_sub0000_cy<11> (Msub_Vout_sub0000_cy<11>)
+     MUXCY:CI->O           0   0.026   0.000  Msub_Vout_sub0000_cy<12> (Msub_Vout_sub0000_cy<12>)
+     XORCY:CI->O           1   0.357   0.000  Msub_Vout_sub0000_xor<13> (Vout_sub0000<13>)
+     FDE:D                    -0.018          Vout_13
+    ----------------------------------------
+    Total                      3.879ns (2.456ns logic, 1.423ns route)
+                                       (63.3% logic, 36.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1807 / 61
+-------------------------------------------------------------------------
+Offset:              3.811ns (Levels of Logic = 11)
+  Source:            Vin<0> (PAD)
+  Destination:       max_val_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Vin<0> to max_val_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.818   0.822  Vin_0_IBUF (Vin_0_IBUF)
+     LUT4:I0->O            1   0.094   0.000  Mcompar_max_val_cmp_gt0000_lut<0> (Mcompar_max_val_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  Mcompar_max_val_cmp_gt0000_cy<0> (Mcompar_max_val_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_max_val_cmp_gt0000_cy<1> (Mcompar_max_val_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_max_val_cmp_gt0000_cy<2> (Mcompar_max_val_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_max_val_cmp_gt0000_cy<3> (Mcompar_max_val_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_max_val_cmp_gt0000_cy<4> (Mcompar_max_val_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_max_val_cmp_gt0000_cy<5> (Mcompar_max_val_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           3   0.254   0.491  Mcompar_max_val_cmp_gt0000_cy<6> (Mcompar_max_val_cmp_gt0000_cy<6>)
+     LUT5:I4->O           13   0.094   0.642  max_val_mux0000<0>11 (N01)
+     LUT4:I2->O            1   0.094   0.000  max_val_mux0000<9>1 (max_val_mux0000<9>)
+     FDC:D                    -0.018          max_val_9
+    ----------------------------------------
+    Total                      3.811ns (1.856ns logic, 1.955ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              3.259ns (Levels of Logic = 1)
+  Source:            Vout_13 (FF)
+  Destination:       Vout<13> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Vout_13 to Vout<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.471   0.336  Vout_13 (Vout_13)
+     OBUF:I->O                 2.452          Vout_13_OBUF (Vout<13>)
+    ----------------------------------------
+    Total                      3.259ns (2.923ns logic, 0.336ns route)
+                                       (89.7% logic, 10.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.95 secs
+ 
+--> 
+
+Total memory usage is 377640 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

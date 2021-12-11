@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/shubh/Google Drive/Cirriculum4_1/BTP/FIR/fir_filter/module_fir.xst" -ofn "C:/Users/shubh/Google Drive/Cirriculum4_1/BTP/FIR/fir_filter/module_fir.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "module_fir.ngc" module_fir.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o module_fir_map.ncd module_fir.ngd module_fir.pcf 
+par -w -intstyle ise -ol high -t 1 module_fir_map.ncd module_fir.ncd module_fir.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml module_fir.twx module_fir.ncd -o module_fir.twr module_fir.pcf 

@@ -1,0 +1,35 @@
+// Spartan3E mapping
+
+#// For DAC
+#NET "SPI_MISO" LOC = "N10" | IOSTANDARD = LVCMOS33 ;
+#NET "SPI_MOSI" LOC = "T4" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "SPI_SCK" LOC = "U16" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "DAC_CS" LOC = "N8" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "DAC_CLR" LOC = "P8" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#
+#// For ADC
+#NET "SPI_MOSI" LOC = "T4" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 6 ;
+#NET "AMP_CS" LOC = "N7" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 6 ;
+#NET "SPI_SCK" LOC = "U16" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "AMP_SHDN" LOC = "P7" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 6 ;
+#NET "AMP_DOUT" LOC = "E18" | IOSTANDARD = LVCMOS33 ;
+
+
+///////   FOR---- ADC_BOARD_1
+NET "SPI_MOSI_B1" LOC = "H33"; //_____ pin_2
+NET "AMP_CS_B1" LOC = "F34" ;  //_____ pin_4
+NET "SPI_SCK_B1" LOC = "H34";  //_____ pin_6
+NET "AMP_SHDN_B1" LOC = "G33"; //_____ pin_8
+NET "AD_CONV_B1" LOC = "G32" ; //_____ pin_10
+NET "SPI_MISO_B1" LOC = "H32" ; //_____pin_12
+
+///////   FOR---- ADC_BOARD_2
+
+NET "SPI_MOSI_B2" LOC = "AM32"; //_____ pin_60
+NET "AMP_CS_B2" LOC = "AJ34" ;  //_____ pin_58
+NET "SPI_SCK_B2" LOC = "AM33";  //_____ pin_56
+NET "AMP_SHDN_B2" LOC = "AL33"; //_____ pin_54
+NET "AD_CONV_B2" LOC = "AL34" ; //_____ pin_52
+NET "SPI_MISO_B2" LOC = "AK32" ; //_____pin_50
+
+//_______________________________________________________

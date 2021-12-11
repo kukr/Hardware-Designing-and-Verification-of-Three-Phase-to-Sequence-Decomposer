@@ -1,0 +1,608 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'SEQ_DECOMPOSER_WITH_ADC'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -lc off -power off -o SEQ_DECOMPOSER_WITH_ADC_map.ncd
+SEQ_DECOMPOSER_WITH_ADC.ngd SEQ_DECOMPOSER_WITH_ADC.pcf 
+Target Device  : xc5vlx50t
+Target Package : ff1136
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Sun Apr 15 15:47:29 2018
+
+Mapping design into LUTs...
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[10].u_
+   ramb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[10].u_
+   ramb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[10].u_
+   ramb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[10].u_
+   ramb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[10].u_
+   ramb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[10].u_
+   ramb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[10].u_
+   ramb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[10].u_
+   ramb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[11].u_
+   ramb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[11].u_
+   ramb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[11].u_
+   ramb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[11].u_
+   ramb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[11].u_
+   ramb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[11].u_
+   ramb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[11].u_
+   ramb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[11].u_
+   ramb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[12].u_
+   ramb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[12].u_
+   ramb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[12].u_
+   ramb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[12].u_
+   ramb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[12].u_
+   ramb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[12].u_
+   ramb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[12].u_
+   ramb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[12].u_
+   ramb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[7].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[7].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[7].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[7].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[7].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[7].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[7].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[7].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[8].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[8].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[8].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[8].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[8].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[8].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[8].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[8].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[9].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[9].u_r
+   amb36/U_RAMB36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[9].u_r
+   amb36/U_RAMB36
+   of frag REGCLKAL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[9].u_r
+   amb36/U_RAMB36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[9].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBU connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[9].u_r
+   amb36/U_RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[9].u_r
+   amb36/U_RAMB36
+   of frag REGCLKBL connected to power/ground net
+   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I
+   _V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[9].u_r
+   amb36/U_RAMB36_REGCLKBL_tiesig
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 32 secs 
+Total CPU  time at the beginning of Placer: 28 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:1ca1e609) REAL time: 35 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:1ca1e609) REAL time: 35 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:e3e65901) REAL time: 35 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:e3e65901) REAL time: 35 secs 
+
+Phase 5.33  Local Placement Optimization
+Phase 5.33  Local Placement Optimization (Checksum:e3e65901) REAL time: 38 secs 
+
+Phase 6.32  Local Placement Optimization
+Phase 6.32  Local Placement Optimization (Checksum:e3e65901) REAL time: 38 secs 
+
+Phase 7.2  Initial Clock and IO Placement
+
+Phase 7.2  Initial Clock and IO Placement (Checksum:783806df) REAL time: 38 secs 
+
+Phase 8.36  Local Placement Optimization
+Phase 8.36  Local Placement Optimization (Checksum:783806df) REAL time: 38 secs 
+
+Phase 9.30  Global Clock Region Assignment
+Phase 9.30  Global Clock Region Assignment (Checksum:783806df) REAL time: 38 secs 
+
+Phase 10.3  Local Placement Optimization
+Phase 10.3  Local Placement Optimization (Checksum:783806df) REAL time: 39 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:783806df) REAL time: 39 secs 
+
+Phase 12.8  Global Placement
+............................
+................................................................................................................................................
+.......
+......................
+Phase 12.8  Global Placement (Checksum:18499f05) REAL time: 42 secs 
+
+Phase 13.29  Local Placement Optimization
+Phase 13.29  Local Placement Optimization (Checksum:18499f05) REAL time: 42 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:18499f05) REAL time: 42 secs 
+
+Phase 15.18  Placement Optimization
+Phase 15.18  Placement Optimization (Checksum:25d3053) REAL time: 47 secs 
+
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:25d3053) REAL time: 47 secs 
+
+Phase 17.34  Placement Validation
+Phase 17.34  Placement Validation (Checksum:25d3053) REAL time: 48 secs 
+
+Total REAL time to Placer completion: 48 secs 
+Total CPU  time to Placer completion: 42 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <Vzero_phase<14>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Vzero_phase<13>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Vneg_phase<14>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Vpos_phase<14>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Vpos_phase<13>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:368 - The signal <digital_out<0>_OBUF> is incomplete.
+   The signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <digital_out<1>_OBUF> is incomplete.
+   The signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <digital_out<2>_OBUF> is incomplete.
+   The signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <digital_out<3>_OBUF> is incomplete.
+   The signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <digital_out<4>_OBUF> is incomplete.
+   The signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <digital_out<5>_OBUF> is incomplete.
+   The signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <digital_out<6>_OBUF> is incomplete.
+   The signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <digital_out<7>_OBUF> is incomplete.
+   The signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <div/GLOBAL_LOGIC0> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <m0/GLOBAL_LOGIC0> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <m7/dv3/GLOBAL_LOGIC0> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <m7/dv2/GLOBAL_LOGIC0> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <m7/dv1/GLOBAL_LOGIC0> is incomplete.
+   The signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   71
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,033 out of  28,800    7%
+    Number used as Flip Flops:               2,028
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  4
+  Number of Slice LUTs:                     10,548 out of  28,800   36%
+    Number used as logic:                    7,744 out of  28,800   26%
+      Number using O6 output only:           3,041
+      Number using O5 output only:             378
+      Number using O5 and O6:                4,325
+    Number used as Memory:                     418 out of   7,680    5%
+      Number used as Shift Register:           418
+        Number using O6 output only:           416
+        Number using O5 output only:             2
+    Number used as exclusive route-thru:     2,386
+  Number of route-thrus:                     2,777
+    Number using O6 output only:             2,764
+    Number using O5 output only:                13
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 3,238 out of   7,200   44%
+  Number of LUT Flip Flop pairs used:       11,569
+    Number with an unused Flip Flop:         9,536 out of  11,569   82%
+    Number with an unused LUT:               1,021 out of  11,569    8%
+    Number of fully used LUT-FF pairs:       1,012 out of  11,569    8%
+    Number of unique control sets:             161
+    Number of slice register sites lost
+      to control set restrictions:             273 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        23 out of     480    4%
+    Number of LOCed IOBs:                       23 out of      23  100%
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      13 out of      60   21%
+    Number using BlockRAM only:                 13
+    Total primitives used:
+      Number of 36k BlockRAM used:              13
+    Total Memory used (KB):                    468 out of   2,160   21%
+  Number of BUFG/BUFGCTRLs:                      6 out of      32   18%
+    Number used as BUFGs:                        6
+  Number of BSCANs:                              1 out of       4   25%
+  Number of DSP48Es:                            17 out of      48   35%
+
+  Number of RPM macros:           24
+Average Fanout of Non-Clock Nets:                2.53
+
+Peak Memory Usage:  804 MB
+Total REAL time to MAP completion:  52 secs 
+Total CPU time to MAP completion:   46 secs 
+
+Mapping completed.
+See MAP report file "SEQ_DECOMPOSER_WITH_ADC_map.mrp" for details.

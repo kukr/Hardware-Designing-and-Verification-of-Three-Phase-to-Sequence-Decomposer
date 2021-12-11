@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jan 21 22:40:36 2018
+# Process ID: 14484
+# Current directory: C:/Users/shubh/Google Drive/Cirriculum4_2/BTP/4_1work/FIR/fir_filter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8208 C:\Users\shubh\Google Drive\Cirriculum4_2\BTP\4_1work\FIR\fir_filter\tst_isim_beh.wdb
+# Log file: C:/Users/shubh/Google Drive/Cirriculum4_2/BTP/4_1work/FIR/fir_filter/vivado.log
+# Journal file: C:/Users/shubh/Google Drive/Cirriculum4_2/BTP/4_1work/FIR/fir_filter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\shubh\Google Drive\Cirriculum4_2\BTP\4_1work\FIR\fir_filter\tst_isim_beh.wdb}

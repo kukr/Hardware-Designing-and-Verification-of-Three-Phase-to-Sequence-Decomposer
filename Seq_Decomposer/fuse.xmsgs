@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"F:/BTP/codes/Seq_Decomposer/FREQ_measure.v" Line 33: Parameter declaration becomes local in <arg fmt="%s" index="1">FREQ_measure</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"F:/BTP/codes/Seq_Decomposer/DC_offset_removal.v" Line 36: Parameter declaration becomes local in <arg fmt="%s" index="1">DC_offset_removal</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"F:/BTP/codes/Seq_Decomposer/AMP_measure.v" Line 34: Parameter declaration becomes local in <arg fmt="%s" index="1">AMP_measure</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"F:/BTP/codes/Seq_Decomposer/SEQ_DECOMPOSER.v" Line 61: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">k</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"F:/BTP/codes/Seq_Decomposer/FIR_order32.v" Line 36: Target &lt;<arg fmt="%s" index="1">temp2</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+</messages>
+

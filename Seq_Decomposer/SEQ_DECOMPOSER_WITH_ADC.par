@@ -1,0 +1,263 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+DESKTOP-7QKNHG3::  Sun Apr 15 15:48:24 2018
+
+par -w -intstyle ise -ol high -mt off SEQ_DECOMPOSER_WITH_ADC_map.ncd
+SEQ_DECOMPOSER_WITH_ADC.ncd SEQ_DECOMPOSER_WITH_ADC.pcf 
+
+
+Constraints file: SEQ_DECOMPOSER_WITH_ADC.pcf.
+Loading device for application Rf_Device from file '5vlx50t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "SEQ_DECOMPOSER_WITH_ADC" is an NCD, version 3.2, device xc5vlx50t, package ff1136, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.73 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+   Number of BSCANs                          1 out of 4      25%
+   Number of BUFGs                           6 out of 32     18%
+   Number of DSP48Es                        17 out of 48     35%
+   Number of External IOBs                  23 out of 480     4%
+      Number of LOCed IOBs                  23 out of 23    100%
+
+   Number of RAMB36_EXPs                    13 out of 60     21%
+   Number of Slices                       3238 out of 7200   44%
+   Number of Slice Registers              2033 out of 28800   7%
+      Number used as Flip Flops           2028
+      Number used as Latches                 1
+      Number used as LatchThrus              4
+
+   Number of Slice LUTS                  10548 out of 28800  36%
+   Number of Slice LUT-Flip Flop pairs   11569 out of 28800  40%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 12 secs 
+Finished initial Timing Analysis.  REAL time: 12 secs 
+
+WARNING:Par:289 - The signal digital_out<0>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal digital_out<1>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal digital_out<2>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal digital_out<3>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal digital_out<4>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal digital_out<5>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal digital_out<6>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal digital_out<7>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<23> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<22> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<21> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<20> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<19> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<18> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<17> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<16> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<15> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<14> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<13> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<12> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<11> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<10> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<9> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<8> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<7> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<6> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<5> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<4> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<3> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<2> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<1> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m10/m3/den<0> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<23> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<22> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<21> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<20> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<19> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<18> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<17> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<16> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<15> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<14> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<13> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<12> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<11> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<10> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<9> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<8> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<7> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<6> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<5> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<4> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<3> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<2> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<1> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m9/m3/den<0> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<23> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<22> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<21> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<20> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<19> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<18> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<17> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<16> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<15> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<14> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<13> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<12> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<11> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<10> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<9> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<8> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<7> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<6> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<5> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<4> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<3> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<2> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<1> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal m8/m3/den<0> has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 43325 unrouted;      REAL time: 13 secs 
+
+Phase  2  : 33552 unrouted;      REAL time: 15 secs 
+
+Phase  3  : 11062 unrouted;      REAL time: 21 secs 
+
+Phase  4  : 11062 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
+
+Updating file: SEQ_DECOMPOSER_WITH_ADC.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+Total REAL time to Router completion: 28 secs 
+Total CPU time to Router completion: 27 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|      clk_100m_BUFGP | BUFGCTRL_X0Y0| No   |   18 |  0.178     |  1.688      |
++---------------------+--------------+------+------+------------+-------------+
+|             clk_16k | BUFGCTRL_X0Y2| No   |   18 |  0.225     |  1.743      |
++---------------------+--------------+------+------+------------+-------------+
+|            clk_400k |BUFGCTRL_X0Y29| No   |   56 |  0.128     |  1.743      |
++---------------------+--------------+------+------+------------+-------------+
+|                dclk |BUFGCTRL_X0Y30| No   |  135 |  0.204     |  1.739      |
++---------------------+--------------+------+------+------------+-------------+
+|          sample_clk | BUFGCTRL_X0Y1| No   |  456 |  0.421     |  1.918      |
++---------------------+--------------+------+------+------------+-------------+
+|    icon_control0<0> |BUFGCTRL_X0Y31| No   |  138 |  0.406     |  1.918      |
++---------------------+--------------+------+------+------------+-------------+
+|U_icon_pro/U0/iUPDAT |              |      |      |            |             |
+|               E_OUT |         Local|      |    1 |  0.000     |  1.038      |
++---------------------+--------------+------+------+------------+-------------+
+|   icon_control0<13> |         Local|      |    5 |  0.000     |  1.020      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.773ns|     2.227ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.484ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.094ns|     0.906ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.576ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    21.332ns|     8.668ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.448ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     2.275ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     4.962ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     4.555ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | MAXDELAY    |         N/A|     5.471ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 72 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+WARNING:Par:284 - There are 8 sourceless signals in this design. This design will not pass the DRC check run by Bitgen.
+
+Total REAL time to PAR completion: 32 secs 
+Total CPU time to PAR completion: 31 secs 
+
+Peak Memory Usage:  666 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 84
+Number of info messages: 0
+
+Writing design to file SEQ_DECOMPOSER_WITH_ADC.ncd
+
+
+
+PAR done!

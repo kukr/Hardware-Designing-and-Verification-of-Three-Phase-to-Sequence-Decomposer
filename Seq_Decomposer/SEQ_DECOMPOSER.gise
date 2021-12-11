@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="SEQ_DECOMPOSER.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="DC_offset_removal.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="DC_offset_removal.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="DC_offset_removal.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="DC_offset_removal.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DC_offset_removal.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="DC_offset_removal.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="DC_offset_removal.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="DC_offset_removal.xst"/>
+    <file xil_pn:fileType="FILE_BLIF" xil_pn:name="DC_offset_removal_cs.blc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="DC_offset_removal_cs.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DC_offset_removal_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DC_offset_removal_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="FIR_filter.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="FIR_filter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="FIR_filter.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="FIR_filter.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FIR_filter.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="FIR_filter.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="FIR_filter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="FIR_filter.xst"/>
+    <file xil_pn:fileType="FILE_BLIF" xil_pn:name="FIR_filter_cs.blc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="FIR_filter_cs.ngc"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="FIR_filter_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FIR_order32_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SEQ_DECOMPOSER.cmd_log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="SEQ_DECOMPOSER.fdo"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SEQ_DECOMPOSER.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SEQ_DECOMPOSER.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SEQ_DECOMPOSER.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SEQ_DECOMPOSER.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SEQ_DECOMPOSER.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SEQ_DECOMPOSER.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SEQ_DECOMPOSER.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.cmd_log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.fdo"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.xst"/>
+    <file xil_pn:fileType="FILE_BLIF" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_cs.blc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_cs.ngc"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_BLIF" xil_pn:name="SEQ_DECOMPOSER_cs.blc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="SEQ_DECOMPOSER_cs.ngc"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SEQ_DECOMPOSER_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SEQ_DECOMPOSER_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SEQ_DECOMPOSER_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="seq_decomposer_with_adc.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="seq_decomposer_with_adc.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="test_SEQ_DECOMPOSER.fdo"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_SEQ_DECOMPOSER_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_SEQ_DECOMPOSER_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_SEQ_DECOMPOSER_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_SEQ_DECOMPOSER_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1523554001" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1523554001">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523958979" xil_pn:in_ck="-575279811695170144" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1523958979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ADS_module.v"/>
+      <outfile xil_pn:name="AMP_measure.v"/>
+      <outfile xil_pn:name="CLOCK.v"/>
+      <outfile xil_pn:name="DC_offset_removal.v"/>
+      <outfile xil_pn:name="DZCPD_module.v"/>
+      <outfile xil_pn:name="FIR_filter.v"/>
+      <outfile xil_pn:name="FIR_order32.v"/>
+      <outfile xil_pn:name="FREQ_measure.v"/>
+      <outfile xil_pn:name="PHASE_measure.v"/>
+      <outfile xil_pn:name="SCE_module.v"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER.v"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.v"/>
+      <outfile xil_pn:name="adcread.v"/>
+      <outfile xil_pn:name="dacwrite.v"/>
+      <outfile xil_pn:name="division.v"/>
+      <outfile xil_pn:name="seq_decomposer_copy.v"/>
+      <outfile xil_pn:name="test_DC_offset_removal.v"/>
+      <outfile xil_pn:name="test_SEQ_DECOMPOSER.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1523710910" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5105871732888554191" xil_pn:start_ts="1523710910">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523710910" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6893205510932554563" xil_pn:start_ts="1523710910">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523787667" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4566854938751093286" xil_pn:start_ts="1523787667">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523958979" xil_pn:in_ck="-575279811695170144" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1523958979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ADS_module.v"/>
+      <outfile xil_pn:name="AMP_measure.v"/>
+      <outfile xil_pn:name="CLOCK.v"/>
+      <outfile xil_pn:name="DC_offset_removal.v"/>
+      <outfile xil_pn:name="DZCPD_module.v"/>
+      <outfile xil_pn:name="FIR_filter.v"/>
+      <outfile xil_pn:name="FIR_order32.v"/>
+      <outfile xil_pn:name="FREQ_measure.v"/>
+      <outfile xil_pn:name="PHASE_measure.v"/>
+      <outfile xil_pn:name="SCE_module.v"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER.v"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.v"/>
+      <outfile xil_pn:name="adcread.v"/>
+      <outfile xil_pn:name="dacwrite.v"/>
+      <outfile xil_pn:name="division.v"/>
+      <outfile xil_pn:name="seq_decomposer_copy.v"/>
+      <outfile xil_pn:name="test_DC_offset_removal.v"/>
+      <outfile xil_pn:name="test_SEQ_DECOMPOSER.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1523958989" xil_pn:in_ck="-575279811695170144" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="8965335000215845494" xil_pn:start_ts="1523958979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="test_SEQ_DECOMPOSER.fdo"/>
+      <outfile xil_pn:name="vsim.wlf"/>
+      <outfile xil_pn:name="work"/>
+    </transform>
+    <transform xil_pn:end_ts="1523701858" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1523701858">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523952528" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6290379881190033056" xil_pn:start_ts="1523952528">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523952528" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4566854938751093286" xil_pn:start_ts="1523952528">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523787447" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1523787447">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523952528" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-5312372240258543502" xil_pn:start_ts="1523952528">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523952528" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-2933210331134281007" xil_pn:start_ts="1523952528">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523952528" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-879117622344372828" xil_pn:start_ts="1523952528">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523952771" xil_pn:in_ck="-71003187409780193" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="3235317553610267596" xil_pn:start_ts="1523952702">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="DC_offset_removal.ngr"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.lso"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ngc"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ngr"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.prj"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.stx"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.syr"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.xst"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1523787151" xil_pn:in_ck="8046549162682803621" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4520000462585516573" xil_pn:start_ts="1523787151">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1523787447" xil_pn:in_ck="6366654631771579973" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2115569714289666915" xil_pn:start_ts="1523787151">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.bld"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ngd"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_cs.blc"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_cs.ngc"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1523787503" xil_pn:in_ck="-1871335556181182585" xil_pn:name="TRANEXT_map_virtex5" xil_pn:prop_ck="7754964544515340855" xil_pn:start_ts="1523787447">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.pcf"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.map"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.mrp"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.ncd"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.ngm"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_map.xrpt"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_summary.xml"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1523787540" xil_pn:in_ck="-4569099018603076640" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="377729956345640697" xil_pn:start_ts="1523787503">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ncd"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.pad"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.par"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ptwx"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.unroutes"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.xpi"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_pad.csv"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_pad.txt"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1523787550" xil_pn:in_ck="-698817934653264674" xil_pn:name="TRANEXT_bitFile_virtex5" xil_pn:prop_ck="1555517831305455702" xil_pn:start_ts="1523787540">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SEQ_DECOMPOSER_WITH_ADC.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="seq_decomposer_with_adc.bgn"/>
+      <outfile xil_pn:name="seq_decomposer_with_adc.drc"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:name="TRAN_postRouteTrce">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

@@ -1,0 +1,150 @@
+Release 12.4 Map M.81d (nt64)
+Xilinx Map Application Log File for Design 'SEQ_DECOMPOSER'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -lc off -power off -o SEQ_DECOMPOSER_map.ncd SEQ_DECOMPOSER.ngd
+SEQ_DECOMPOSER.pcf 
+Target Device  : xc5vlx50t
+Target Package : ff1136
+Target Speed   : -3
+Mapper Version : virtex5 -- $Revision: 1.52.76.2 $
+Mapped Date    : Sun Feb 11 16:22:52 2018
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc5vlx50t' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal SPI_MISO connected to top level port SPI_MISO has
+   been removed.
+WARNING:MapLib:701 - Signal rst connected to top level port rst has been
+   removed.
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 11 secs 
+Total CPU  time at the beginning of Placer: 8 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:500d9e3f) REAL time: 12 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:500d9e3f) REAL time: 12 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:500d9e3f) REAL time: 12 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:500d9e3f) REAL time: 12 secs 
+
+Phase 5.33  Local Placement Optimization
+Phase 5.33  Local Placement Optimization (Checksum:500d9e3f) REAL time: 12 secs 
+
+Phase 6.32  Local Placement Optimization
+Phase 6.32  Local Placement Optimization (Checksum:500d9e3f) REAL time: 12 secs 
+
+Phase 7.2  Initial Clock and IO Placement
+
+Phase 7.2  Initial Clock and IO Placement (Checksum:1796aaf) REAL time: 12 secs 
+
+Phase 8.36  Local Placement Optimization
+Phase 8.36  Local Placement Optimization (Checksum:1796aaf) REAL time: 12 secs 
+
+Phase 9.30  Global Clock Region Assignment
+Phase 9.30  Global Clock Region Assignment (Checksum:1796aaf) REAL time: 12 secs 
+
+Phase 10.3  Local Placement Optimization
+Phase 10.3  Local Placement Optimization (Checksum:1796aaf) REAL time: 12 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:1796aaf) REAL time: 12 secs 
+
+Phase 12.8  Global Placement
+.......
+..
+Phase 12.8  Global Placement (Checksum:a71d6806) REAL time: 12 secs 
+
+Phase 13.29  Local Placement Optimization
+Phase 13.29  Local Placement Optimization (Checksum:a71d6806) REAL time: 12 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:a71d6806) REAL time: 12 secs 
+
+Phase 15.18  Placement Optimization
+Phase 15.18  Placement Optimization (Checksum:cd745c5e) REAL time: 18 secs 
+
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:cd745c5e) REAL time: 18 secs 
+
+Phase 17.34  Placement Validation
+Phase 17.34  Placement Validation (Checksum:cd745c5e) REAL time: 18 secs 
+
+Total REAL time to Placer completion: 18 secs 
+Total CPU  time to Placer completion: 15 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:367 - The signal <SPI_MISO_B2_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <sw_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    4
+Slice Logic Utilization:
+  Number of Slice Registers:                    57 out of  28,800    1%
+    Number used as Flip Flops:                  57
+  Number of Slice LUTs:                         87 out of  28,800    1%
+    Number used as logic:                       81 out of  28,800    1%
+      Number using O6 output only:              22
+      Number using O5 output only:              12
+      Number using O5 and O6:                   47
+    Number used as exclusive route-thru:         6
+  Number of route-thrus:                        18
+    Number using O6 output only:                18
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    27 out of   7,200    1%
+  Number of LUT Flip Flop pairs used:           87
+    Number with an unused Flip Flop:            30 out of      87   34%
+    Number with an unused LUT:                   0 out of      87    0%
+    Number of fully used LUT-FF pairs:          57 out of      87   65%
+    Number of unique control sets:               5
+    Number of slice register sites lost
+      to control set restrictions:               3 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        21 out of     480    4%
+    Number of LOCed IOBs:                       21 out of      21  100%
+
+Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
+    Number used as BUFGs:                        2
+
+Average Fanout of Non-Clock Nets:                3.48
+
+Peak Memory Usage:  470 MB
+Total REAL time to MAP completion:  19 secs 
+Total CPU time to MAP completion:   15 secs 
+
+Mapping completed.
+See MAP report file "SEQ_DECOMPOSER_map.mrp" for details.

@@ -1,0 +1,47 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/BTP/codes/Seq_Decomposer/test_SEQ_DECOMPOSER_isim_beh.exe -prj F:/BTP/codes/Seq_Decomposer/test_SEQ_DECOMPOSER_beh.prj work.test_SEQ_DECOMPOSER work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/division.v" into library work
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/PHASE_measure.v" into library work
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/FREQ_measure.v" into library work
+WARNING:HDLCompiler:693 - "F:/BTP/codes/Seq_Decomposer/FREQ_measure.v" Line 33: Parameter declaration becomes local in FREQ_measure with formal parameter declaration list
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/FIR_order32.v" into library work
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/DC_offset_removal.v" into library work
+WARNING:HDLCompiler:693 - "F:/BTP/codes/Seq_Decomposer/DC_offset_removal.v" Line 36: Parameter declaration becomes local in DC_offset_removal with formal parameter declaration list
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/AMP_measure.v" into library work
+WARNING:HDLCompiler:693 - "F:/BTP/codes/Seq_Decomposer/AMP_measure.v" Line 34: Parameter declaration becomes local in AMP_measure with formal parameter declaration list
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/SCE_module.v" into library work
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/FIR_filter.v" into library work
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/DZCPD_module.v" into library work
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/ADS_module.v" into library work
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/SEQ_DECOMPOSER.v" into library work
+Analyzing Verilog file "F:/BTP/codes/Seq_Decomposer/test_SEQ_DECOMPOSER.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "F:/BTP/codes/Seq_Decomposer/SEQ_DECOMPOSER.v" Line 61: Size mismatch in connection of port <k>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:329 - "F:/BTP/codes/Seq_Decomposer/FIR_order32.v" Line 36: Target <temp2> of concurrent assignment or output port connection should be a net type.
+Completed static elaboration
+Compiling module division(WIDTH=24)
+Compiling module ADS_module
+Compiling module DC_offset_removal
+Compiling module FREQ_measure
+Compiling module division(WIDTH=36)
+Compiling module FIR_order32
+Compiling module FIR_filter
+Compiling module division(WIDTH=32)
+Compiling module SCE_module
+Compiling module AMP_measure
+Compiling module division
+Compiling module PHASE_measure
+Compiling module DZCPD_module
+Compiling module SEQ_DECOMPOSER
+Compiling module test_SEQ_DECOMPOSER
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 16 Verilog Units
+Built simulation executable F:/BTP/codes/Seq_Decomposer/test_SEQ_DECOMPOSER_isim_beh.exe
+Fuse Memory Usage: 28792 KB
+Fuse CPU Usage: 515 ms

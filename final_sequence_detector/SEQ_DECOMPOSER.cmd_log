@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sequence_decomposer_UCF.ucf -p xc5vlx50t-ff1136-3 SEQ_DECOMPOSER.ngc SEQ_DECOMPOSER.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sequence_decomposer_UCF.ucf -p xc5vlx50t-ff1136-3 SEQ_DECOMPOSER.ngc SEQ_DECOMPOSER.ngd  
+xst -intstyle ise -ifn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.xst" -ofn "C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/SEQ_DECOMPOSER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sequence_decomposer_UCF.ucf -p xc5vlx50t-ff1136-3 SEQ_DECOMPOSER.ngc SEQ_DECOMPOSER.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o SEQ_DECOMPOSER_map.ncd SEQ_DECOMPOSER.ngd SEQ_DECOMPOSER.pcf 
+par -w -intstyle ise -ol high -mt off SEQ_DECOMPOSER_map.ncd SEQ_DECOMPOSER.ncd SEQ_DECOMPOSER.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SEQ_DECOMPOSER.twx SEQ_DECOMPOSER.ncd -o SEQ_DECOMPOSER.twr SEQ_DECOMPOSER.pcf -ucf sequence_decomposer_UCF.ucf 
+bitgen -intstyle ise -f SEQ_DECOMPOSER.ut SEQ_DECOMPOSER.ncd 
+xst -intstyle ise -ifn "E:/BTP/final_sequence_detector/SEQ_DECOMPOSER.xst" -ofn "E:/BTP/final_sequence_detector/SEQ_DECOMPOSER.syr" 

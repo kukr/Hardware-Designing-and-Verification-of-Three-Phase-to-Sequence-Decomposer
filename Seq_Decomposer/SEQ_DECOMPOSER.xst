@@ -1,0 +1,5 @@
+set -tmpdir "F:/BTP/codes/Seq_Decomposer/xst/projnav.tmp"
+set -xsthdpdir "F:/BTP/codes/Seq_Decomposer/xst"
+elaborate
+-ifn SEQ_DECOMPOSER.prj
+-ifmt mixed

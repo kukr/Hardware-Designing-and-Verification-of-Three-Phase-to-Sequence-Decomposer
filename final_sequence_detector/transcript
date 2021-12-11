@@ -1,0 +1,657 @@
+# Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# do {test_SEQ_DECOMPOSER.fdo}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:26 on Feb 11,2018
+# vlog -reportprogress 300 division.v 
+# -- Compiling module division
+# 
+# Top level modules:
+# 	division
+# End time: 15:24:27 on Feb 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:27 on Feb 11,2018
+# vlog -reportprogress 300 PHASE_measure.v 
+# -- Compiling module PHASE_measure
+# 
+# Top level modules:
+# 	PHASE_measure
+# End time: 15:24:27 on Feb 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:27 on Feb 11,2018
+# vlog -reportprogress 300 FREQ_measure.v 
+# -- Compiling module FREQ_measure
+# 
+# Top level modules:
+# 	FREQ_measure
+# End time: 15:24:27 on Feb 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:27 on Feb 11,2018
+# vlog -reportprogress 300 AMP_measure.v 
+# -- Compiling module AMP_measure
+# 
+# Top level modules:
+# 	AMP_measure
+# End time: 15:24:28 on Feb 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:28 on Feb 11,2018
+# vlog -reportprogress 300 SCE_module.v 
+# -- Compiling module SCE_module
+# 
+# Top level modules:
+# 	SCE_module
+# End time: 15:24:28 on Feb 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:28 on Feb 11,2018
+# vlog -reportprogress 300 DZCPD_module.v 
+# -- Compiling module DZCPD_module
+# 
+# Top level modules:
+# 	DZCPD_module
+# End time: 15:24:28 on Feb 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:28 on Feb 11,2018
+# vlog -reportprogress 300 ADS_module.v 
+# -- Compiling module ADS_module
+# 
+# Top level modules:
+# 	ADS_module
+# End time: 15:24:28 on Feb 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:28 on Feb 11,2018
+# vlog -reportprogress 300 sequence_detector.v 
+# -- Compiling module SEQ_DECOMPOSER
+# 
+# Top level modules:
+# 	SEQ_DECOMPOSER
+# End time: 15:24:28 on Feb 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:28 on Feb 11,2018
+# vlog -reportprogress 300 sequence_decomposer_TB.v 
+# -- Compiling module test_SEQ_DECOMPOSER
+# 
+# Top level modules:
+# 	test_SEQ_DECOMPOSER
+# End time: 15:24:28 on Feb 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:28 on Feb 11,2018
+# vlog -reportprogress 300 C:/Xilinx/12.4/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 15:24:28 on Feb 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui -do "do {test_SEQ_DECOMPOSER.fdo}" 
+# Start time: 15:24:29 on Feb 11,2018
+# Loading work.test_SEQ_DECOMPOSER
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.SEQ_DECOMPOSER
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.division
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.FREQ_measure
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.ADS_module
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.SCE_module
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.DZCPD_module
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.AMP_measure
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.PHASE_measure
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.glbl
+# ** Warning: (vsim-3015) sequence_detector.v(73): [PCDPC] - Port size (8) does not match connection size (32) for port 'k'. The port definition is at: DZCPD_module.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /test_SEQ_DECOMPOSER/uut/m4 File: DZCPD_module.v
+# ** Warning: (vsim-3015) sequence_detector.v(75): [PCDPC] - Port size (8) does not match connection size (32) for port 'k'. The port definition is at: DZCPD_module.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /test_SEQ_DECOMPOSER/uut/m5 File: DZCPD_module.v
+# ** Warning: (vsim-3015) sequence_detector.v(77): [PCDPC] - Port size (8) does not match connection size (32) for port 'k'. The port definition is at: DZCPD_module.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /test_SEQ_DECOMPOSER/uut/m6 File: DZCPD_module.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#                    1	k=  1	Va=     0, Vb=     0, Vc=     0 	Vzero=     x, Vpos=     x, Vneg=     x	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    x	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    x	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    x
+#                    3	k=  1	Va=   322, Vb= -7250, Vc=  6928 	Vzero=     x, Vpos=     x, Vneg=     x	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                    5	k=  1	Va=   963, Vb= -7526, Vc=  6564 	Vzero=     x, Vpos=     x, Vneg=     x	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                    7	k=  1	Va=  1598, Vb= -7757, Vc=  6159 	Vzero=     x, Vpos=     x, Vneg=     x	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                    9	k=  1	Va=  2223, Vb= -7940, Vc=  5716 	Vzero=     x, Vpos=     x, Vneg=     x	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   11	k=  1	Va=  2835, Vb= -8073, Vc=  5238 	Vzero=     x, Vpos=     x, Vneg=     x	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   13	k=  1	Va=  3429, Vb= -8157, Vc=  4728 	Vzero=     0, Vpos=     x, Vneg=     x	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   15	k=  1	Va=  4002, Vb= -8191, Vc=  4188 	Vzero=     0, Vpos=  2714, Vneg=   714	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   17	k=  1	Va=  4551, Vb= -8174, Vc=  3623 	Vzero=     0, Vpos=  3104, Vneg=   897	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   19	k=  1	Va=  5071, Vb= -8107, Vc=  3035 	Vzero=     0, Vpos=  3474, Vneg=  1076	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   21	k=  1	Va=  5560, Vb= -7990, Vc=  2429 	Vzero=     0, Vpos=  3824, Vneg=  1247	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   23	k=  1	Va=  6015, Vb= -7823, Vc=  1808 	Vzero=     0, Vpos=  4148, Vneg=  1411	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   25	k=  1	Va=  6433, Vb= -7609, Vc=  1175 	Vzero=     0, Vpos=  4449, Vneg=  1565	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   27	k=  1	Va=  6811, Vb= -7347, Vc=   536 	Vzero=     0, Vpos=  4721, Vneg=  1711	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   29	k=  1	Va=  7147, Vb= -7040, Vc=  -107 	Vzero=     0, Vpos=  4964, Vneg=  1846	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   31	k=  1	Va=  7439, Vb= -6690, Vc=  -750 	Vzero=     0, Vpos=  5177, Vneg=  1969	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   33	k=  1	Va=  7685, Vb= -6298, Vc= -1387 	Vzero=     0, Vpos=  5359, Vneg=  2080	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   35	k=  1	Va=  7883, Vb= -5868, Vc= -2016 	Vzero=     0, Vpos=  5505, Vneg=  2179	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   37	k=  1	Va=  8034, Vb= -5401, Vc= -2633 	Vzero=     0, Vpos=  5619, Vneg=  2264	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   39	k=  1	Va=  8134, Vb= -4901, Vc= -3234 	Vzero=     0, Vpos=  5700, Vneg=  2333	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   41	k=  1	Va=  8185, Vb= -4371, Vc= -3814 	Vzero=     0, Vpos=  5744, Vneg=  2390	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   43	k=  1	Va=  8185, Vb= -3814, Vc= -4371 	Vzero=     0, Vpos=  5750, Vneg=  2434	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   45	k=  1	Va=  8134, Vb= -3234, Vc= -4901 	Vzero=     0, Vpos=  5724, Vneg=  2460	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp=    0, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   47	k=  1	Va=  8034, Vb= -2633, Vc= -5401 	Vzero=     0, Vpos=  5661, Vneg=  2472	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   49	k=  1	Va=  7883, Vb= -2016, Vc= -5868 	Vzero=     0, Vpos=  5566, Vneg=  2467	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp=    0, Vneg_phase=    0
+#                   51	k=  1	Va=  7685, Vb= -1387, Vc= -6298 	Vzero=     0, Vpos=  5435, Vneg=  2448	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   53	k=  1	Va=  7439, Vb=  -750, Vc= -6690 	Vzero=     0, Vpos=  5268, Vneg=  2416	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   55	k=  1	Va=  7147, Vb=  -107, Vc= -7040 	Vzero=     0, Vpos=  5071, Vneg=  2367	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   57	k=  1	Va=  6811, Vb=   536, Vc= -7347 	Vzero=     0, Vpos=  4844, Vneg=  2302	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   59	k=  1	Va=  6433, Vb=  1175, Vc= -7609 	Vzero=     0, Vpos=  4585, Vneg=  2225	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   61	k=  1	Va=  6015, Vb=  1808, Vc= -7823 	Vzero=     0, Vpos=  4298, Vneg=  2135	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   63	k=  1	Va=  5560, Vb=  2429, Vc= -7990 	Vzero=     0, Vpos=  3984, Vneg=  2030	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   65	k=  1	Va=  5071, Vb=  3035, Vc= -8107 	Vzero=     0, Vpos=  3647, Vneg=  1912	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   67	k=  1	Va=  4551, Vb=  3623, Vc= -8174 	Vzero=     0, Vpos=  3286, Vneg=  1785	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   69	k=  1	Va=  4002, Vb=  4188, Vc= -8191 	Vzero=     0, Vpos=  2906, Vneg=  1644	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   71	k=  1	Va=  3429, Vb=  4728, Vc= -8157 	Vzero=     0, Vpos=  2507, Vneg=  1494	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=    0, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   73	k=  1	Va=  2835, Vb=  5238, Vc= -8073 	Vzero=     0, Vpos=  2093, Vneg=  1335	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   75	k=  1	Va=  2223, Vb=  5716, Vc= -7940 	Vzero=     0, Vpos=  1666, Vneg=  1168	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=    0, Vneg_amp= 1233, Vneg_phase=    0
+#                   77	k=  1	Va=  1598, Vb=  6159, Vc= -7757 	Vzero=     0, Vpos=  1230, Vneg=   992	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                   79	k=  1	Va=   963, Vb=  6564, Vc= -7526 	Vzero=     0, Vpos=   784, Vneg=   813	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                   81	k=  1	Va=   322, Vb=  6928, Vc= -7250 	Vzero=     0, Vpos=   334, Vneg=   627	Vref_freq=    0	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                   83	k=  1	Va=  -322, Vb=  7250, Vc= -6928 	Vzero=     0, Vpos=  -115, Vneg=   437	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                   87	k=  4	Va= -1598, Vb=  7757, Vc= -6159 	Vzero=     0, Vpos=  -567, Vneg=   245	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                   91	k=  4	Va= -2835, Vb=  8073, Vc= -5238 	Vzero=     0, Vpos= -1585, Vneg=   -12	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                   95	k=  4	Va= -4002, Vb=  8191, Vc= -4188 	Vzero=     0, Vpos= -2694, Vneg=  -140	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                   99	k=  4	Va= -5071, Vb=  8107, Vc= -3035 	Vzero=     0, Vpos= -3735, Vneg=  -267	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  103	k=  4	Va= -6015, Vb=  7823, Vc= -1808 	Vzero=     0, Vpos= -4685, Vneg=  -385	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  107	k=  4	Va= -6811, Vb=  7347, Vc=  -536 	Vzero=     0, Vpos= -5519, Vneg=  -495	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  111	k=  4	Va= -7439, Vb=  6690, Vc=   750 	Vzero=     0, Vpos= -6217, Vneg=  -593	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  115	k=  4	Va= -7883, Vb=  5868, Vc=  2016 	Vzero=     0, Vpos= -6764, Vneg=  -674	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  119	k=  4	Va= -8134, Vb=  4901, Vc=  3234 	Vzero=     0, Vpos= -7141, Vneg=  -741	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  123	k=  4	Va= -8185, Vb=  3814, Vc=  4371 	Vzero=     0, Vpos= -7348, Vneg=  -786	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  127	k=  4	Va= -8034, Vb=  2633, Vc=  5401 	Vzero=     0, Vpos= -7367, Vneg=  -817	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  131	k=  4	Va= -7685, Vb=  1387, Vc=  6298 	Vzero=     0, Vpos= -7209, Vneg=  -824	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 2862, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  135	k=  4	Va= -7147, Vb=   107, Vc=  7040 	Vzero=     0, Vpos= -6872, Vneg=  -812	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1233, Vneg_phase=    0
+#                  139	k=  4	Va= -6433, Vb= -1175, Vc=  7609 	Vzero=     0, Vpos= -6366, Vneg=  -780	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  143	k=  4	Va= -5560, Vb= -2429, Vc=  7990 	Vzero=     0, Vpos= -5703, Vneg=  -729	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  147	k=  4	Va= -4551, Vb= -3623, Vc=  8174 	Vzero=     0, Vpos= -4900, Vneg=  -659	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  151	k=  4	Va= -3429, Vb= -4728, Vc=  8157 	Vzero=     0, Vpos= -3976, Vneg=  -574	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  155	k=  4	Va= -2223, Vb= -5716, Vc=  7940 	Vzero=     0, Vpos= -2955, Vneg=  -473	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  159	k=  4	Va=  -963, Vb= -6564, Vc=  7526 	Vzero=     0, Vpos= -1861, Vneg=  -362	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  163	k=  4	Va=   322, Vb= -7250, Vc=  6928 	Vzero=     0, Vpos=  -719, Vneg=  -243	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  167	k=  4	Va=  1598, Vb= -7757, Vc=  6159 	Vzero=     0, Vpos=   437, Vneg=  -115	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  171	k=  4	Va=  2835, Vb= -8073, Vc=  5238 	Vzero=     0, Vpos=  1585, Vneg=    12	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  175	k=  4	Va=  4002, Vb= -8191, Vc=  4188 	Vzero=     0, Vpos=  2694, Vneg=   140	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  179	k=  4	Va=  5071, Vb= -8107, Vc=  3035 	Vzero=     0, Vpos=  3735, Vneg=   267	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  183	k=  4	Va=  6015, Vb= -7823, Vc=  1808 	Vzero=     0, Vpos=  4685, Vneg=   385	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  187	k=  4	Va=  6811, Vb= -7347, Vc=   536 	Vzero=     0, Vpos=  5519, Vneg=   495	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  191	k=  4	Va=  7439, Vb= -6690, Vc=  -750 	Vzero=     0, Vpos=  6217, Vneg=   593	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  195	k=  4	Va=  7883, Vb= -5868, Vc= -2016 	Vzero=     0, Vpos=  6764, Vneg=   674	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  199	k=  4	Va=  8134, Vb= -4901, Vc= -3234 	Vzero=     0, Vpos=  7141, Vneg=   741	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  203	k=  4	Va=  8185, Vb= -3814, Vc= -4371 	Vzero=     0, Vpos=  7348, Vneg=   786	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  207	k=  4	Va=  8034, Vb= -2633, Vc= -5401 	Vzero=     0, Vpos=  7367, Vneg=   817	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  211	k=  4	Va=  7685, Vb= -1387, Vc= -6298 	Vzero=     0, Vpos=  7209, Vneg=   824	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 6466, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  215	k=  4	Va=  7147, Vb=  -107, Vc= -7040 	Vzero=     0, Vpos=  6872, Vneg=   812	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp= 1639, Vneg_phase=    0
+#                  219	k=  4	Va=  6433, Vb=  1175, Vc= -7609 	Vzero=     0, Vpos=  6366, Vneg=   780	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp=  812, Vneg_phase=    0
+#                  223	k=  4	Va=  5560, Vb=  2429, Vc= -7990 	Vzero=     0, Vpos=  5703, Vneg=   729	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp=  812, Vneg_phase=    0
+#                  227	k=  4	Va=  4551, Vb=  3623, Vc= -8174 	Vzero=     0, Vpos=  4900, Vneg=   659	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp=  812, Vneg_phase=    0
+#                  231	k=  4	Va=  3429, Vb=  4728, Vc= -8157 	Vzero=     0, Vpos=  3976, Vneg=   574	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp=  812, Vneg_phase=    0
+#                  235	k=  4	Va=  2223, Vb=  5716, Vc= -7940 	Vzero=     0, Vpos=  2955, Vneg=   473	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp=  812, Vneg_phase=    0
+#                  239	k=  4	Va=   963, Vb=  6564, Vc= -7526 	Vzero=     0, Vpos=  1861, Vneg=   362	Vref_freq= 5555	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp=  812, Vneg_phase=    0
+#                  243	k=  4	Va=  -322, Vb=  7250, Vc= -6928 	Vzero=     0, Vpos=   719, Vneg=   243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp=  812, Vneg_phase=    0
+#                  247	k=  5	Va= -1598, Vb=  7757, Vc= -6159 	Vzero=     0, Vpos=  -437, Vneg=   115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq=65535, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp=  812, Vneg_phase=    0
+#                  251	k=  5	Va= -2835, Vb=  8073, Vc= -5238 	Vzero=     0, Vpos= -1585, Vneg=   -12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=65535, Vneg_amp=  812, Vneg_phase=    0
+#                  255	k=  5	Va= -4002, Vb=  8191, Vc= -4188 	Vzero=     0, Vpos= -2694, Vneg=  -140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=    0	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=    0
+#                  259	k=  5	Va= -5071, Vb=  8107, Vc= -3035 	Vzero=     0, Vpos= -3735, Vneg=  -267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=    0
+#                  263	k=  5	Va= -6015, Vb=  7823, Vc= -1808 	Vzero=     0, Vpos= -4685, Vneg=  -385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  267	k=  5	Va= -6811, Vb=  7347, Vc=  -536 	Vzero=     0, Vpos= -5519, Vneg=  -495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  271	k=  5	Va= -7439, Vb=  6690, Vc=   750 	Vzero=     0, Vpos= -6217, Vneg=  -593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  275	k=  5	Va= -7883, Vb=  5868, Vc=  2016 	Vzero=     0, Vpos= -6764, Vneg=  -674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  279	k=  5	Va= -8134, Vb=  4901, Vc=  3234 	Vzero=     0, Vpos= -7141, Vneg=  -741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  283	k=  5	Va= -8185, Vb=  3814, Vc=  4371 	Vzero=     0, Vpos= -7348, Vneg=  -786	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  287	k=  5	Va= -8034, Vb=  2633, Vc=  5401 	Vzero=     0, Vpos= -7367, Vneg=  -817	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  291	k=  5	Va= -7685, Vb=  1387, Vc=  6298 	Vzero=     0, Vpos= -7209, Vneg=  -824	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  295	k=  5	Va= -7147, Vb=   107, Vc=  7040 	Vzero=     0, Vpos= -6872, Vneg=  -812	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  299	k=  5	Va= -6433, Vb= -1175, Vc=  7609 	Vzero=     0, Vpos= -6366, Vneg=  -780	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  303	k=  5	Va= -5560, Vb= -2429, Vc=  7990 	Vzero=     0, Vpos= -5703, Vneg=  -729	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  307	k=  5	Va= -4551, Vb= -3623, Vc=  8174 	Vzero=     0, Vpos= -4900, Vneg=  -659	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  311	k=  5	Va= -3429, Vb= -4728, Vc=  8157 	Vzero=     0, Vpos= -3976, Vneg=  -574	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  315	k=  5	Va= -2223, Vb= -5716, Vc=  7940 	Vzero=     0, Vpos= -2955, Vneg=  -473	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  319	k=  5	Va=  -963, Vb= -6564, Vc=  7526 	Vzero=     0, Vpos= -1861, Vneg=  -362	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  323	k=  5	Va=   322, Vb= -7250, Vc=  6928 	Vzero=     0, Vpos=  -719, Vneg=  -243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  327	k=  5	Va=  1598, Vb= -7757, Vc=  6159 	Vzero=     0, Vpos=   437, Vneg=  -115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  331	k=  5	Va=  2835, Vb= -8073, Vc=  5238 	Vzero=     0, Vpos=  1585, Vneg=    12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  335	k=  5	Va=  4002, Vb= -8191, Vc=  4188 	Vzero=     0, Vpos=  2694, Vneg=   140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  339	k=  5	Va=  5071, Vb= -8107, Vc=  3035 	Vzero=     0, Vpos=  3735, Vneg=   267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  343	k=  5	Va=  6015, Vb= -7823, Vc=  1808 	Vzero=     0, Vpos=  4685, Vneg=   385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  347	k=  5	Va=  6811, Vb= -7347, Vc=   536 	Vzero=     0, Vpos=  5519, Vneg=   495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  351	k=  5	Va=  7439, Vb= -6690, Vc=  -750 	Vzero=     0, Vpos=  6217, Vneg=   593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  355	k=  5	Va=  7883, Vb= -5868, Vc= -2016 	Vzero=     0, Vpos=  6764, Vneg=   674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  359	k=  5	Va=  8134, Vb= -4901, Vc= -3234 	Vzero=     0, Vpos=  7141, Vneg=   741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  363	k=  5	Va=  8185, Vb= -3814, Vc= -4371 	Vzero=     0, Vpos=  7348, Vneg=   786	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  367	k=  5	Va=  8034, Vb= -2633, Vc= -5401 	Vzero=     0, Vpos=  7367, Vneg=   817	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  371	k=  5	Va=  7685, Vb= -1387, Vc= -6298 	Vzero=     0, Vpos=  7209, Vneg=   824	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  375	k=  5	Va=  7147, Vb=  -107, Vc= -7040 	Vzero=     0, Vpos=  6872, Vneg=   812	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  379	k=  5	Va=  6433, Vb=  1175, Vc= -7609 	Vzero=     0, Vpos=  6366, Vneg=   780	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  383	k=  5	Va=  5560, Vb=  2429, Vc= -7990 	Vzero=     0, Vpos=  5703, Vneg=   729	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  387	k=  5	Va=  4551, Vb=  3623, Vc= -8174 	Vzero=     0, Vpos=  4900, Vneg=   659	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  391	k=  5	Va=  3429, Vb=  4728, Vc= -8157 	Vzero=     0, Vpos=  3976, Vneg=   574	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  395	k=  5	Va=  2223, Vb=  5716, Vc= -7940 	Vzero=     0, Vpos=  2955, Vneg=   473	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  399	k=  5	Va=   963, Vb=  6564, Vc= -7526 	Vzero=     0, Vpos=  1861, Vneg=   362	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  403	k=  5	Va=  -322, Vb=  7250, Vc= -6928 	Vzero=     0, Vpos=   719, Vneg=   243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  407	k=  5	Va= -1598, Vb=  7757, Vc= -6159 	Vzero=     0, Vpos=  -437, Vneg=   115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 4761, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  411	k=  5	Va= -2835, Vb=  8073, Vc= -5238 	Vzero=     0, Vpos= -1585, Vneg=   -12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq=12500, Vneg_amp=  812, Vneg_phase=  461
+#                  415	k=  5	Va= -4002, Vb=  8191, Vc= -4188 	Vzero=     0, Vpos= -2694, Vneg=  -140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=  461
+#                  419	k=  5	Va= -5071, Vb=  8107, Vc= -3035 	Vzero=     0, Vpos= -3735, Vneg=  -267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=  461
+#                  423	k=  5	Va= -6015, Vb=  7823, Vc= -1808 	Vzero=     0, Vpos= -4685, Vneg=  -385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  427	k=  5	Va= -6811, Vb=  7347, Vc=  -536 	Vzero=     0, Vpos= -5519, Vneg=  -495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  431	k=  5	Va= -7439, Vb=  6690, Vc=   750 	Vzero=     0, Vpos= -6217, Vneg=  -593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  435	k=  5	Va= -7883, Vb=  5868, Vc=  2016 	Vzero=     0, Vpos= -6764, Vneg=  -674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  439	k=  5	Va= -8134, Vb=  4901, Vc=  3234 	Vzero=     0, Vpos= -7141, Vneg=  -741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  443	k=  5	Va= -8185, Vb=  3814, Vc=  4371 	Vzero=     0, Vpos= -7348, Vneg=  -786	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  447	k=  5	Va= -8034, Vb=  2633, Vc=  5401 	Vzero=     0, Vpos= -7367, Vneg=  -817	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  451	k=  5	Va= -7685, Vb=  1387, Vc=  6298 	Vzero=     0, Vpos= -7209, Vneg=  -824	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  455	k=  5	Va= -7147, Vb=   107, Vc=  7040 	Vzero=     0, Vpos= -6872, Vneg=  -812	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  459	k=  5	Va= -6433, Vb= -1175, Vc=  7609 	Vzero=     0, Vpos= -6366, Vneg=  -780	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  463	k=  5	Va= -5560, Vb= -2429, Vc=  7990 	Vzero=     0, Vpos= -5703, Vneg=  -729	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  467	k=  5	Va= -4551, Vb= -3623, Vc=  8174 	Vzero=     0, Vpos= -4900, Vneg=  -659	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  471	k=  5	Va= -3429, Vb= -4728, Vc=  8157 	Vzero=     0, Vpos= -3976, Vneg=  -574	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  475	k=  5	Va= -2223, Vb= -5716, Vc=  7940 	Vzero=     0, Vpos= -2955, Vneg=  -473	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  479	k=  5	Va=  -963, Vb= -6564, Vc=  7526 	Vzero=     0, Vpos= -1861, Vneg=  -362	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  483	k=  5	Va=   322, Vb= -7250, Vc=  6928 	Vzero=     0, Vpos=  -719, Vneg=  -243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  487	k=  5	Va=  1598, Vb= -7757, Vc=  6159 	Vzero=     0, Vpos=   437, Vneg=  -115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  491	k=  5	Va=  2835, Vb= -8073, Vc=  5238 	Vzero=     0, Vpos=  1585, Vneg=    12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  495	k=  5	Va=  4002, Vb= -8191, Vc=  4188 	Vzero=     0, Vpos=  2694, Vneg=   140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  499	k=  5	Va=  5071, Vb= -8107, Vc=  3035 	Vzero=     0, Vpos=  3735, Vneg=   267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  503	k=  5	Va=  6015, Vb= -7823, Vc=  1808 	Vzero=     0, Vpos=  4685, Vneg=   385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  507	k=  5	Va=  6811, Vb= -7347, Vc=   536 	Vzero=     0, Vpos=  5519, Vneg=   495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  511	k=  5	Va=  7439, Vb= -6690, Vc=  -750 	Vzero=     0, Vpos=  6217, Vneg=   593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  515	k=  5	Va=  7883, Vb= -5868, Vc= -2016 	Vzero=     0, Vpos=  6764, Vneg=   674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  519	k=  5	Va=  8134, Vb= -4901, Vc= -3234 	Vzero=     0, Vpos=  7141, Vneg=   741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  523	k=  5	Va=  8185, Vb= -3814, Vc= -4371 	Vzero=     0, Vpos=  7348, Vneg=   786	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  527	k=  5	Va=  8034, Vb= -2633, Vc= -5401 	Vzero=     0, Vpos=  7367, Vneg=   817	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  531	k=  5	Va=  7685, Vb= -1387, Vc= -6298 	Vzero=     0, Vpos=  7209, Vneg=   824	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  535	k=  5	Va=  7147, Vb=  -107, Vc= -7040 	Vzero=     0, Vpos=  6872, Vneg=   812	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  539	k=  5	Va=  6433, Vb=  1175, Vc= -7609 	Vzero=     0, Vpos=  6366, Vneg=   780	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  543	k=  5	Va=  5560, Vb=  2429, Vc= -7990 	Vzero=     0, Vpos=  5703, Vneg=   729	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  547	k=  5	Va=  4551, Vb=  3623, Vc= -8174 	Vzero=     0, Vpos=  4900, Vneg=   659	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  551	k=  5	Va=  3429, Vb=  4728, Vc= -8157 	Vzero=     0, Vpos=  3976, Vneg=   574	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  555	k=  5	Va=  2223, Vb=  5716, Vc= -7940 	Vzero=     0, Vpos=  2955, Vneg=   473	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  559	k=  5	Va=   963, Vb=  6564, Vc= -7526 	Vzero=     0, Vpos=  1861, Vneg=   362	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  563	k=  5	Va=  -322, Vb=  7250, Vc= -6928 	Vzero=     0, Vpos=   719, Vneg=   243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  567	k=  5	Va= -1598, Vb=  7757, Vc= -6159 	Vzero=     0, Vpos=  -437, Vneg=   115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  571	k=  5	Va= -2835, Vb=  8073, Vc= -5238 	Vzero=     0, Vpos= -1585, Vneg=   -12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  575	k=  5	Va= -4002, Vb=  8191, Vc= -4188 	Vzero=     0, Vpos= -2694, Vneg=  -140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  579	k=  5	Va= -5071, Vb=  8107, Vc= -3035 	Vzero=     0, Vpos= -3735, Vneg=  -267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  583	k=  5	Va= -6015, Vb=  7823, Vc= -1808 	Vzero=     0, Vpos= -4685, Vneg=  -385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  587	k=  5	Va= -6811, Vb=  7347, Vc=  -536 	Vzero=     0, Vpos= -5519, Vneg=  -495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  591	k=  5	Va= -7439, Vb=  6690, Vc=   750 	Vzero=     0, Vpos= -6217, Vneg=  -593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  595	k=  5	Va= -7883, Vb=  5868, Vc=  2016 	Vzero=     0, Vpos= -6764, Vneg=  -674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  599	k=  5	Va= -8134, Vb=  4901, Vc=  3234 	Vzero=     0, Vpos= -7141, Vneg=  -741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  603	k=  5	Va= -8185, Vb=  3814, Vc=  4371 	Vzero=     0, Vpos= -7348, Vneg=  -786	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  607	k=  5	Va= -8034, Vb=  2633, Vc=  5401 	Vzero=     0, Vpos= -7367, Vneg=  -817	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  611	k=  5	Va= -7685, Vb=  1387, Vc=  6298 	Vzero=     0, Vpos= -7209, Vneg=  -824	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  615	k=  5	Va= -7147, Vb=   107, Vc=  7040 	Vzero=     0, Vpos= -6872, Vneg=  -812	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  619	k=  5	Va= -6433, Vb= -1175, Vc=  7609 	Vzero=     0, Vpos= -6366, Vneg=  -780	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  623	k=  5	Va= -5560, Vb= -2429, Vc=  7990 	Vzero=     0, Vpos= -5703, Vneg=  -729	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  627	k=  5	Va= -4551, Vb= -3623, Vc=  8174 	Vzero=     0, Vpos= -4900, Vneg=  -659	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  631	k=  5	Va= -3429, Vb= -4728, Vc=  8157 	Vzero=     0, Vpos= -3976, Vneg=  -574	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  635	k=  5	Va= -2223, Vb= -5716, Vc=  7940 	Vzero=     0, Vpos= -2955, Vneg=  -473	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  639	k=  5	Va=  -963, Vb= -6564, Vc=  7526 	Vzero=     0, Vpos= -1861, Vneg=  -362	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  643	k=  5	Va=   322, Vb= -7250, Vc=  6928 	Vzero=     0, Vpos=  -719, Vneg=  -243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  647	k=  5	Va=  1598, Vb= -7757, Vc=  6159 	Vzero=     0, Vpos=   437, Vneg=  -115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  651	k=  5	Va=  2835, Vb= -8073, Vc=  5238 	Vzero=     0, Vpos=  1585, Vneg=    12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  655	k=  5	Va=  4002, Vb= -8191, Vc=  4188 	Vzero=     0, Vpos=  2694, Vneg=   140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  659	k=  5	Va=  5071, Vb= -8107, Vc=  3035 	Vzero=     0, Vpos=  3735, Vneg=   267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  663	k=  5	Va=  6015, Vb= -7823, Vc=  1808 	Vzero=     0, Vpos=  4685, Vneg=   385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  667	k=  5	Va=  6811, Vb= -7347, Vc=   536 	Vzero=     0, Vpos=  5519, Vneg=   495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  671	k=  5	Va=  7439, Vb= -6690, Vc=  -750 	Vzero=     0, Vpos=  6217, Vneg=   593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  675	k=  5	Va=  7883, Vb= -5868, Vc= -2016 	Vzero=     0, Vpos=  6764, Vneg=   674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  679	k=  5	Va=  8134, Vb= -4901, Vc= -3234 	Vzero=     0, Vpos=  7141, Vneg=   741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  683	k=  5	Va=  8185, Vb= -3814, Vc= -4371 	Vzero=     0, Vpos=  7348, Vneg=   786	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  687	k=  5	Va=  8034, Vb= -2633, Vc= -5401 	Vzero=     0, Vpos=  7367, Vneg=   817	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  691	k=  5	Va=  7685, Vb= -1387, Vc= -6298 	Vzero=     0, Vpos=  7209, Vneg=   824	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  695	k=  5	Va=  7147, Vb=  -107, Vc= -7040 	Vzero=     0, Vpos=  6872, Vneg=   812	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  699	k=  5	Va=  6433, Vb=  1175, Vc= -7609 	Vzero=     0, Vpos=  6366, Vneg=   780	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  703	k=  5	Va=  5560, Vb=  2429, Vc= -7990 	Vzero=     0, Vpos=  5703, Vneg=   729	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  707	k=  5	Va=  4551, Vb=  3623, Vc= -8174 	Vzero=     0, Vpos=  4900, Vneg=   659	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  711	k=  5	Va=  3429, Vb=  4728, Vc= -8157 	Vzero=     0, Vpos=  3976, Vneg=   574	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  715	k=  5	Va=  2223, Vb=  5716, Vc= -7940 	Vzero=     0, Vpos=  2955, Vneg=   473	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  719	k=  5	Va=   963, Vb=  6564, Vc= -7526 	Vzero=     0, Vpos=  1861, Vneg=   362	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  723	k=  5	Va=  -322, Vb=  7250, Vc= -6928 	Vzero=     0, Vpos=   719, Vneg=   243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  727	k=  5	Va= -1598, Vb=  7757, Vc= -6159 	Vzero=     0, Vpos=  -437, Vneg=   115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  731	k=  5	Va= -2835, Vb=  8073, Vc= -5238 	Vzero=     0, Vpos= -1585, Vneg=   -12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  735	k=  5	Va= -4002, Vb=  8191, Vc= -4188 	Vzero=     0, Vpos= -2694, Vneg=  -140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  739	k=  5	Va= -5071, Vb=  8107, Vc= -3035 	Vzero=     0, Vpos= -3735, Vneg=  -267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  743	k=  5	Va= -6015, Vb=  7823, Vc= -1808 	Vzero=     0, Vpos= -4685, Vneg=  -385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  747	k=  5	Va= -6811, Vb=  7347, Vc=  -536 	Vzero=     0, Vpos= -5519, Vneg=  -495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  751	k=  5	Va= -7439, Vb=  6690, Vc=   750 	Vzero=     0, Vpos= -6217, Vneg=  -593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  755	k=  5	Va= -7883, Vb=  5868, Vc=  2016 	Vzero=     0, Vpos= -6764, Vneg=  -674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  759	k=  5	Va= -8134, Vb=  4901, Vc=  3234 	Vzero=     0, Vpos= -7141, Vneg=  -741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  763	k=  5	Va= -8185, Vb=  3814, Vc=  4371 	Vzero=     0, Vpos= -7348, Vneg=  -786	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  767	k=  5	Va= -8034, Vb=  2633, Vc=  5401 	Vzero=     0, Vpos= -7367, Vneg=  -817	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  771	k=  5	Va= -7685, Vb=  1387, Vc=  6298 	Vzero=     0, Vpos= -7209, Vneg=  -824	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  775	k=  5	Va= -7147, Vb=   107, Vc=  7040 	Vzero=     0, Vpos= -6872, Vneg=  -812	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  779	k=  5	Va= -6433, Vb= -1175, Vc=  7609 	Vzero=     0, Vpos= -6366, Vneg=  -780	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  783	k=  5	Va= -5560, Vb= -2429, Vc=  7990 	Vzero=     0, Vpos= -5703, Vneg=  -729	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  787	k=  5	Va= -4551, Vb= -3623, Vc=  8174 	Vzero=     0, Vpos= -4900, Vneg=  -659	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  791	k=  5	Va= -3429, Vb= -4728, Vc=  8157 	Vzero=     0, Vpos= -3976, Vneg=  -574	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  795	k=  5	Va= -2223, Vb= -5716, Vc=  7940 	Vzero=     0, Vpos= -2955, Vneg=  -473	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  799	k=  5	Va=  -963, Vb= -6564, Vc=  7526 	Vzero=     0, Vpos= -1861, Vneg=  -362	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  803	k=  5	Va=   322, Vb= -7250, Vc=  6928 	Vzero=     0, Vpos=  -719, Vneg=  -243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  807	k=  5	Va=  1598, Vb= -7757, Vc=  6159 	Vzero=     0, Vpos=   437, Vneg=  -115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  811	k=  5	Va=  2835, Vb= -8073, Vc=  5238 	Vzero=     0, Vpos=  1585, Vneg=    12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  815	k=  5	Va=  4002, Vb= -8191, Vc=  4188 	Vzero=     0, Vpos=  2694, Vneg=   140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  819	k=  5	Va=  5071, Vb= -8107, Vc=  3035 	Vzero=     0, Vpos=  3735, Vneg=   267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  823	k=  5	Va=  6015, Vb= -7823, Vc=  1808 	Vzero=     0, Vpos=  4685, Vneg=   385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  827	k=  5	Va=  6811, Vb= -7347, Vc=   536 	Vzero=     0, Vpos=  5519, Vneg=   495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  831	k=  5	Va=  7439, Vb= -6690, Vc=  -750 	Vzero=     0, Vpos=  6217, Vneg=   593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  835	k=  5	Va=  7883, Vb= -5868, Vc= -2016 	Vzero=     0, Vpos=  6764, Vneg=   674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  839	k=  5	Va=  8134, Vb= -4901, Vc= -3234 	Vzero=     0, Vpos=  7141, Vneg=   741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  843	k=  5	Va=  8185, Vb= -3814, Vc= -4371 	Vzero=     0, Vpos=  7348, Vneg=   786	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  847	k=  5	Va=  8034, Vb= -2633, Vc= -5401 	Vzero=     0, Vpos=  7367, Vneg=   817	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  851	k=  5	Va=  7685, Vb= -1387, Vc= -6298 	Vzero=     0, Vpos=  7209, Vneg=   824	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  855	k=  5	Va=  7147, Vb=  -107, Vc= -7040 	Vzero=     0, Vpos=  6872, Vneg=   812	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  859	k=  5	Va=  6433, Vb=  1175, Vc= -7609 	Vzero=     0, Vpos=  6366, Vneg=   780	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  863	k=  5	Va=  5560, Vb=  2429, Vc= -7990 	Vzero=     0, Vpos=  5703, Vneg=   729	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  867	k=  5	Va=  4551, Vb=  3623, Vc= -8174 	Vzero=     0, Vpos=  4900, Vneg=   659	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  871	k=  5	Va=  3429, Vb=  4728, Vc= -8157 	Vzero=     0, Vpos=  3976, Vneg=   574	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  875	k=  5	Va=  2223, Vb=  5716, Vc= -7940 	Vzero=     0, Vpos=  2955, Vneg=   473	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  879	k=  5	Va=   963, Vb=  6564, Vc= -7526 	Vzero=     0, Vpos=  1861, Vneg=   362	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  883	k=  5	Va=  -322, Vb=  7250, Vc= -6928 	Vzero=     0, Vpos=   719, Vneg=   243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  887	k=  5	Va= -1598, Vb=  7757, Vc= -6159 	Vzero=     0, Vpos=  -437, Vneg=   115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  891	k=  5	Va= -2835, Vb=  8073, Vc= -5238 	Vzero=     0, Vpos= -1585, Vneg=   -12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  895	k=  5	Va= -4002, Vb=  8191, Vc= -4188 	Vzero=     0, Vpos= -2694, Vneg=  -140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  899	k=  5	Va= -5071, Vb=  8107, Vc= -3035 	Vzero=     0, Vpos= -3735, Vneg=  -267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  903	k=  5	Va= -6015, Vb=  7823, Vc= -1808 	Vzero=     0, Vpos= -4685, Vneg=  -385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  907	k=  5	Va= -6811, Vb=  7347, Vc=  -536 	Vzero=     0, Vpos= -5519, Vneg=  -495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  911	k=  5	Va= -7439, Vb=  6690, Vc=   750 	Vzero=     0, Vpos= -6217, Vneg=  -593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  915	k=  5	Va= -7883, Vb=  5868, Vc=  2016 	Vzero=     0, Vpos= -6764, Vneg=  -674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  919	k=  5	Va= -8134, Vb=  4901, Vc=  3234 	Vzero=     0, Vpos= -7141, Vneg=  -741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  923	k=  5	Va= -8185, Vb=  3814, Vc=  4371 	Vzero=     0, Vpos= -7348, Vneg=  -786	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  927	k=  5	Va= -8034, Vb=  2633, Vc=  5401 	Vzero=     0, Vpos= -7367, Vneg=  -817	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  931	k=  5	Va= -7685, Vb=  1387, Vc=  6298 	Vzero=     0, Vpos= -7209, Vneg=  -824	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  935	k=  5	Va= -7147, Vb=   107, Vc=  7040 	Vzero=     0, Vpos= -6872, Vneg=  -812	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  939	k=  5	Va= -6433, Vb= -1175, Vc=  7609 	Vzero=     0, Vpos= -6366, Vneg=  -780	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  943	k=  5	Va= -5560, Vb= -2429, Vc=  7990 	Vzero=     0, Vpos= -5703, Vneg=  -729	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  947	k=  5	Va= -4551, Vb= -3623, Vc=  8174 	Vzero=     0, Vpos= -4900, Vneg=  -659	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  951	k=  5	Va= -3429, Vb= -4728, Vc=  8157 	Vzero=     0, Vpos= -3976, Vneg=  -574	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  955	k=  5	Va= -2223, Vb= -5716, Vc=  7940 	Vzero=     0, Vpos= -2955, Vneg=  -473	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  959	k=  5	Va=  -963, Vb= -6564, Vc=  7526 	Vzero=     0, Vpos= -1861, Vneg=  -362	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  963	k=  5	Va=   322, Vb= -7250, Vc=  6928 	Vzero=     0, Vpos=  -719, Vneg=  -243	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  967	k=  5	Va=  1598, Vb= -7757, Vc=  6159 	Vzero=     0, Vpos=   437, Vneg=  -115	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  971	k=  5	Va=  2835, Vb= -8073, Vc=  5238 	Vzero=     0, Vpos=  1585, Vneg=    12	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  975	k=  5	Va=  4002, Vb= -8191, Vc=  4188 	Vzero=     0, Vpos=  2694, Vneg=   140	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  979	k=  5	Va=  5071, Vb= -8107, Vc=  3035 	Vzero=     0, Vpos=  3735, Vneg=   267	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  983	k=  5	Va=  6015, Vb= -7823, Vc=  1808 	Vzero=     0, Vpos=  4685, Vneg=   385	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  987	k=  5	Va=  6811, Vb= -7347, Vc=   536 	Vzero=     0, Vpos=  5519, Vneg=   495	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  991	k=  5	Va=  7439, Vb= -6690, Vc=  -750 	Vzero=     0, Vpos=  6217, Vneg=   593	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  995	k=  5	Va=  7883, Vb= -5868, Vc= -2016 	Vzero=     0, Vpos=  6764, Vneg=   674	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+#                  999	k=  5	Va=  8134, Vb= -4901, Vc= -3234 	Vzero=     0, Vpos=  7141, Vneg=   741	Vref_freq= 4938	Vzero_freq=    0, Vzero_amp=    0, Vzero_phase=    0	Vpos_freq= 5000, Vpos_amp= 7209, Vpos_phase=  450	Vneg_freq= 5000, Vneg_amp=  812, Vneg_phase=   11
+do C:/Users/Praveen/Desktop/AAAAAAAAAAAAAAAAAAAA/sequence_detector/wave_seq_deomposer.do
+# End time: 15:25:52 on Feb 11,2018, Elapsed time: 0:01:23
+# Errors: 84, Warnings: 3

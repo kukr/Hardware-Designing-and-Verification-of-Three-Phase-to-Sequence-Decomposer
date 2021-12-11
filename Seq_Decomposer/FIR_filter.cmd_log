@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "F:/BTP/codes/Seq_Decomposer/FIR_filter.xst" -ofn "F:/BTP/codes/Seq_Decomposer/FIR_filter.syr" 

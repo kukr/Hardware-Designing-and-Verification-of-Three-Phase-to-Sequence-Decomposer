@@ -1,0 +1,1504 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.67 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.67 secs
+ 
+--> Reading design: SEQ_DECOMPOSER.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SEQ_DECOMPOSER.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SEQ_DECOMPOSER"
+Output Format                      : NGC
+Target Device                      : xc5vlx50t-3-ff1136
+
+---- Source Options
+Top Module Name                    : SEQ_DECOMPOSER
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Off
+Reduce Control Sets                : Off
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "division.v" in library work
+Compiling verilog file "PHASE_measure.v" in library work
+Module <division> compiled
+Compiling verilog file "FREQ_measure.v" in library work
+Module <PHASE_measure> compiled
+Compiling verilog file "AMP_measure.v" in library work
+Module <FREQ_measure> compiled
+Compiling verilog file "SCE_module.v" in library work
+Module <AMP_measure> compiled
+Compiling verilog file "DZCPD_module.v" in library work
+Module <SCE_module> compiled
+Compiling verilog file "CLOCK.v" in library work
+Module <DZCPD_module> compiled
+Compiling verilog file "ADS_module.v" in library work
+Module <CLOCK> compiled
+Compiling verilog file "adcread.v" in library work
+Module <ADS_module> compiled
+Compiling verilog file "sequence_detector.v" in library work
+Module <adcread> compiled
+Module <SEQ_DECOMPOSER> compiled
+No errors in compilation
+Analysis of file <"SEQ_DECOMPOSER.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <SEQ_DECOMPOSER> in library <work> with parameters.
+	M = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <division> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000010000"
+
+Analyzing hierarchy for module <division> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000011000"
+
+Analyzing hierarchy for module <CLOCK> in library <work>.
+
+Analyzing hierarchy for module <adcread> in library <work>.
+
+Analyzing hierarchy for module <FREQ_measure> in library <work> with parameters.
+	M = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <ADS_module> in library <work>.
+
+Analyzing hierarchy for module <SCE_module> in library <work> with parameters.
+	M = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <DZCPD_module> in library <work> with parameters.
+	M = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <division> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000011000"
+
+Analyzing hierarchy for module <division> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <AMP_measure> in library <work> with parameters.
+	M = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <FREQ_measure> in library <work> with parameters.
+	M = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <PHASE_measure> in library <work> with parameters.
+	M = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <division> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000011000"
+
+Analyzing hierarchy for module <division> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000010000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SEQ_DECOMPOSER>.
+	M = 32'sb00000000000000000000000000001110
+Module <SEQ_DECOMPOSER> is correct for synthesis.
+ 
+Analyzing module <division.1> in library <work>.
+	WIDTH = 32'sb00000000000000000000000000010000
+Module <division.1> is correct for synthesis.
+ 
+Analyzing module <division.2> in library <work>.
+	WIDTH = 32'sb00000000000000000000000000011000
+Module <division.2> is correct for synthesis.
+ 
+Analyzing module <CLOCK> in library <work>.
+Module <CLOCK> is correct for synthesis.
+ 
+Analyzing module <adcread> in library <work>.
+Module <adcread> is correct for synthesis.
+ 
+Analyzing module <FREQ_measure> in library <work>.
+	M = 32'sb00000000000000000000000000001110
+Module <FREQ_measure> is correct for synthesis.
+ 
+Analyzing module <ADS_module> in library <work>.
+Module <ADS_module> is correct for synthesis.
+ 
+Analyzing module <SCE_module> in library <work>.
+	M = 32'sb00000000000000000000000000001110
+Module <SCE_module> is correct for synthesis.
+ 
+Analyzing module <division.3> in library <work>.
+	WIDTH = 32'sb00000000000000000000000000100000
+Module <division.3> is correct for synthesis.
+ 
+Analyzing module <DZCPD_module> in library <work>.
+	M = 32'sb00000000000000000000000000001110
+Module <DZCPD_module> is correct for synthesis.
+ 
+Analyzing module <AMP_measure> in library <work>.
+	M = 32'sb00000000000000000000000000001110
+Module <AMP_measure> is correct for synthesis.
+ 
+Analyzing module <PHASE_measure> in library <work>.
+	M = 32'sb00000000000000000000000000001110
+Module <PHASE_measure> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <division_1>.
+    Related source file is "division.v".
+WARNING:Xst:646 - Signal <p1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <b1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <a1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit adder for signal <$add0000> created at line 38.
+    Found 17-bit adder for signal <old_p1_10$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_13$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_16$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_19$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_22$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_25$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_28$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_31$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_34$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_37$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_4$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_40$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_43$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_46$addsub0000> created at line 48.
+    Found 17-bit adder for signal <old_p1_7$addsub0000> created at line 48.
+    Found 17-bit comparator greater for signal <p1$cmp_gt0000> created at line 38.
+    Found 16-bit adder for signal <Res$addsub0000> created at line 52.
+    Summary:
+	inferred  33 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <division_1> synthesized.
+
+
+Synthesizing Unit <division_2>.
+    Related source file is "division.v".
+WARNING:Xst:646 - Signal <p1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <b1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <a1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 24-bit adder for signal <$add0000> created at line 38.
+    Found 25-bit adder for signal <old_p1_102$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_105$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_108$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_111$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_114$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_117$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_51$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_54$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_57$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_60$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_63$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_66$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_69$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_72$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_75$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_78$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_81$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_84$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_87$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_90$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_93$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_96$addsub0000> created at line 48.
+    Found 25-bit adder for signal <old_p1_99$addsub0000> created at line 48.
+    Found 25-bit comparator greater for signal <p1$cmp_gt0000> created at line 38.
+    Found 24-bit adder for signal <Res$addsub0000> created at line 52.
+    Summary:
+	inferred  49 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <division_2> synthesized.
+
+
+Synthesizing Unit <CLOCK>.
+    Related source file is "CLOCK.v".
+    Found 1-bit register for signal <clk_80k>.
+    Found 1-bit register for signal <clk_20k>.
+    Found 1-bit register for signal <clk_400k>.
+    Found 1-bit register for signal <clk_40k>.
+    Found 33-bit comparator greatequal for signal <clk_20k$cmp_ge0000> created at line 16.
+    Found 33-bit comparator greatequal for signal <clk_400k$cmp_ge0000> created at line 46.
+    Found 33-bit comparator greatequal for signal <clk_40k$cmp_ge0000> created at line 26.
+    Found 33-bit comparator greatequal for signal <clk_80k$cmp_ge0000> created at line 36.
+    Found 32-bit register for signal <COUNTER1>.
+    Found 32-bit adder for signal <COUNTER1$add0000> created at line 21.
+    Found 32-bit register for signal <COUNTER2>.
+    Found 32-bit adder for signal <COUNTER2$add0000> created at line 31.
+    Found 32-bit register for signal <COUNTER3>.
+    Found 32-bit adder for signal <COUNTER3$add0000> created at line 41.
+    Found 32-bit register for signal <COUNTER4>.
+    Found 32-bit adder for signal <COUNTER4$add0000> created at line 51.
+    Summary:
+	inferred 132 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <CLOCK> synthesized.
+
+
+Synthesizing Unit <adcread>.
+    Related source file is "adcread.v".
+WARNING:Xst:653 - Signal <GAIN_AB> is used but never assigned. This sourceless signal will be automatically connected to value 00010001.
+    Found 14-bit register for signal <ADC_A>.
+    Found 14-bit register for signal <ADC_B>.
+    Found 1-bit register for signal <AD_CONV>.
+    Found 1-bit register for signal <AMP_CS>.
+    Found 1-bit register for signal <SPI_MOSI>.
+    Found 8-bit up counter for signal <COUNTER>.
+    Found 8-bit comparator greatequal for signal <COUNTER$cmp_ge0000> created at line 48.
+    Found 8-bit adder for signal <old_COUNTER_124$add0000> created at line 47.
+    Found 1-bit register for signal <STOP_CLK>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <adcread> synthesized.
+
+
+Synthesizing Unit <ADS_module>.
+    Related source file is "ADS_module.v".
+WARNING:Xst:647 - Input <k<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <dclk>.
+    Found 32-bit up counter for signal <i>.
+    Found 33-bit comparator greatequal for signal <i$cmp_ge0000> created at line 32.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <ADS_module> synthesized.
+
+
+Synthesizing Unit <division_3>.
+    Related source file is "division.v".
+WARNING:Xst:646 - Signal <p1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <b1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <a1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <$add0000> created at line 38.
+    Found 33-bit adder for signal <old_p1_128$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_131$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_134$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_137$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_140$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_143$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_146$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_149$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_152$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_155$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_158$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_161$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_164$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_167$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_170$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_173$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_176$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_179$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_182$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_185$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_188$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_191$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_194$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_197$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_200$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_203$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_206$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_209$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_212$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_215$addsub0000> created at line 48.
+    Found 33-bit adder for signal <old_p1_218$addsub0000> created at line 48.
+    Found 32-bit adder for signal <Res$addsub0000> created at line 52.
+    Found 33-bit comparator greater for signal <Res$cmp_gt0000> created at line 52.
+    Summary:
+	inferred  65 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <division_3> synthesized.
+
+
+Synthesizing Unit <AMP_measure>.
+    Related source file is "AMP_measure.v".
+WARNING:Xst:1780 - Signal <offset_temp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <max_pos> is used but never assigned. This sourceless signal will be automatically connected to value 01111111111111.
+WARNING:Xst:653 - Signal <max_neg> is used but never assigned. This sourceless signal will be automatically connected to value 10000000000000.
+WARNING:Xst:1780 - Signal <amp_temp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 14-bit register for signal <offset>.
+    Found 14-bit register for signal <amp>.
+    Found 15-bit subtractor for signal <$sub0000> created at line 49.
+    Found 15-bit subtractor for signal <$sub0001> created at line 51.
+    Found 14-bit comparator greatequal for signal <amp$and0000> created at line 53.
+    Found 15-bit subtractor for signal <amp$sub0000> created at line 55.
+    Found 14-bit register for signal <max_val>.
+    Found 14-bit register for signal <min_val>.
+    Found 15-bit adder for signal <offset$add0000> created at line 56.
+    Found 14-bit comparator greater for signal <old_max_val_221$cmp_gt0000> created at line 49.
+    Found 14-bit comparator less for signal <old_max_val_221$cmp_lt0000> created at line 49.
+    Found 16-bit comparator less for signal <old_max_val_221$cmp_lt0001> created at line 49.
+    Found 14-bit comparator greater for signal <old_min_val_222$cmp_gt0000> created at line 51.
+    Found 14-bit comparator less for signal <old_min_val_222$cmp_lt0000> created at line 51.
+    Found 16-bit comparator less for signal <old_min_val_222$cmp_lt0001> created at line 51.
+    Found 14-bit register for signal <Vin_1>.
+    Found 14-bit register for signal <Vin_2>.
+    Summary:
+	inferred  84 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+Unit <AMP_measure> synthesized.
+
+
+Synthesizing Unit <FREQ_measure>.
+    Related source file is "FREQ_measure.v".
+WARNING:Xst:646 - Signal <freq_temp<23:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:643 - "FREQ_measure.v" line 36: The result of a 18x8-bit multiplication is partially used. Only the 24 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 16-bit register for signal <freq>.
+    Found 16-bit up counter for signal <counter>.
+    Found 14-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 50.
+    Found 16-bit comparator greater for signal <den$cmp_gt0000> created at line 36.
+    Found 18x8-bit multiplier for signal <den$mult0001> created at line 36.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplier(s).
+	inferred   2 Comparator(s).
+Unit <FREQ_measure> synthesized.
+
+
+Synthesizing Unit <SCE_module>.
+    Related source file is "SCE_module.v".
+WARNING:Xst:653 - Signal <max_pos> is used but never assigned. This sourceless signal will be automatically connected to value 01111111111111.
+WARNING:Xst:653 - Signal <max_neg> is used but never assigned. This sourceless signal will be automatically connected to value 10000000000000.
+WARNING:Xst:653 - Signal <cf> is used but never assigned. This sourceless signal will be automatically connected to value 001111101000.
+WARNING:Xst:653 - Signal <Zc> is used but never assigned. This sourceless signal will be automatically connected to value 0001000101010111.
+WARNING:Xst:653 - Signal <Zb> is used but never assigned. This sourceless signal will be automatically connected to value 0001000101010111.
+WARNING:Xst:646 - Signal <Va1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Pc> is used but never assigned. This sourceless signal will be automatically connected to value 0001001011110101.
+WARNING:Xst:653 - Signal <Pb> is used but never assigned. This sourceless signal will be automatically connected to value 0000111100001101.
+    Found 14-bit register for signal <Vzero>.
+    Found 14-bit register for signal <Vpos>.
+    Found 14-bit register for signal <Vneg>.
+    Found 32-bit subtractor for signal <num1>.
+    Found 31-bit adder for signal <num1$add0000> created at line 39.
+    Found 31-bit adder for signal <num1$add0001> created at line 39.
+    Found 32-bit adder for signal <num1$addsub0000> created at line 39.
+    Found 14x12-bit multiplier for signal <num1$mult0000> created at line 39.
+    Found 14x16-bit multiplier for signal <num1$mult0001> created at line 39.
+    Found 14x16-bit multiplier for signal <num1$mult0002> created at line 39.
+    Found 14x16-bit multiplier for signal <num1$mult0003> created at line 39.
+    Found 14x16-bit multiplier for signal <num1$mult0004> created at line 39.
+    Found 32-bit subtractor for signal <num2>.
+    Found 31-bit adder for signal <num2$add0000> created at line 40.
+    Found 31-bit adder for signal <num2$add0001> created at line 40.
+    Found 32-bit adder for signal <num2$addsub0000> created at line 40.
+    Found 14x16-bit multiplier for signal <num2$mult0000> created at line 40.
+    Found 14x16-bit multiplier for signal <num2$mult0001> created at line 40.
+    Found 14x16-bit multiplier for signal <num2$mult0002> created at line 40.
+    Found 14x16-bit multiplier for signal <num2$mult0003> created at line 40.
+    Found 15-bit adder for signal <num3$addsub0000> created at line 41.
+    Found 15-bit adder carry out for signal <num3$addsub0002> created at line 41.
+    Found 16x12-bit multiplier for signal <num3$mult0000> created at line 41.
+    Found 14-bit register for signal <Vb1>.
+    Found 14-bit register for signal <Vc1>.
+    Summary:
+	inferred  70 D-type flip-flop(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred  10 Multiplier(s).
+Unit <SCE_module> synthesized.
+
+
+Synthesizing Unit <PHASE_measure>.
+    Related source file is "PHASE_measure.v".
+WARNING:Xst:653 - Signal <wait2> is used but never assigned. This sourceless signal will be automatically connected to value 10.
+WARNING:Xst:653 - Signal <wait1> is used but never assigned. This sourceless signal will be automatically connected to value 01.
+WARNING:Xst:653 - Signal <result> is used but never assigned. This sourceless signal will be automatically connected to value 11.
+WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:643 - "PHASE_measure.v" line 39: The result of a 8x9-bit multiplication is partially used. Only the 16 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 16-bit register for signal <phase>.
+    Found 8-bit up counter for signal <counter>.
+    Found 14-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 59.
+    Found 14-bit comparator greatequal for signal <counter$cmp_ge0001> created at line 65.
+    Found 14-bit comparator less for signal <counter$cmp_lt0000> created at line 59.
+    Found 14-bit comparator less for signal <counter$cmp_lt0001> created at line 65.
+    Found 4-bit register for signal <next_state>.
+    Found 14-bit comparator greatequal for signal <next_state$cmp_ge0000> created at line 59.
+    Found 14-bit comparator greatequal for signal <next_state$cmp_ge0001> created at line 65.
+    Found 14-bit comparator less for signal <next_state$cmp_lt0000> created at line 59.
+    Found 14-bit comparator less for signal <next_state$cmp_lt0001> created at line 65.
+    Found 8x9-bit multiplier for signal <num$mult0001> created at line 39.
+    Found 4-bit register for signal <state>.
+    Found 14-bit register for signal <Vin1>.
+    Found 14-bit register for signal <Vref1>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  52 D-type flip-flop(s).
+	inferred   1 Multiplier(s).
+	inferred   8 Comparator(s).
+Unit <PHASE_measure> synthesized.
+
+
+Synthesizing Unit <DZCPD_module>.
+    Related source file is "DZCPD_module.v".
+WARNING:Xst:647 - Input <Vref_freq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <DZCPD_module> synthesized.
+
+
+Synthesizing Unit <SEQ_DECOMPOSER>.
+    Related source file is "sequence_detector.v".
+WARNING:Xst:646 - Signal <k2<23:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_80k> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_40k> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_20k> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <adc_in_D> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Vzero> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Vref_offset> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000.
+WARNING:Xst:646 - Signal <Vpos_phase> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Vpos_freq> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Vneg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <N> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
+WARNING:Xst:653 - Signal <Fs> is used but never assigned. This sourceless signal will be automatically connected to value 0001111101000000.
+    Found 8-bit register for signal <LED>.
+    Found 16-bit comparator greater for signal <k$cmp_gt0000> created at line 110.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <SEQ_DECOMPOSER> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 13
+ 14x12-bit multiplier                                  : 1
+ 14x16-bit multiplier                                  : 8
+ 16x12-bit multiplier                                  : 1
+ 18x8-bit multiplier                                   : 2
+ 8x9-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 429
+ 15-bit adder                                          : 2
+ 15-bit adder carry out                                : 1
+ 15-bit subtractor                                     : 3
+ 16-bit adder                                          : 4
+ 17-bit adder                                          : 30
+ 17-bit subtractor                                     : 32
+ 24-bit adder                                          : 6
+ 25-bit adder                                          : 69
+ 25-bit subtractor                                     : 72
+ 31-bit adder                                          : 4
+ 32-bit adder                                          : 12
+ 32-bit subtractor                                     : 2
+ 33-bit adder                                          : 93
+ 33-bit subtractor                                     : 96
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+# Counters                                             : 6
+ 16-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+ 8-bit up counter                                      : 3
+# Registers                                            : 94
+ 1-bit register                                        : 73
+ 14-bit register                                       : 13
+ 16-bit register                                       : 3
+ 32-bit register                                       : 3
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 35
+ 14-bit comparator greatequal                          : 7
+ 14-bit comparator greater                             : 2
+ 14-bit comparator less                                : 6
+ 16-bit comparator greater                             : 3
+ 16-bit comparator less                                : 2
+ 17-bit comparator greater                             : 2
+ 25-bit comparator greater                             : 3
+ 33-bit comparator greatequal                          : 5
+ 33-bit comparator greater                             : 3
+ 8-bit comparator greatequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <dv2> is unconnected in block <m3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <dv3> is unconnected in block <m3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <m3> is unconnected in block <m4>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <m4> is unconnected in block <m4>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <Vin_1_13> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_12> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_11> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_10> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_9> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_8> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_7> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_6> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_5> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_4> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_3> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_2> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_1> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin_1_0> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_0> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_1> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_2> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_3> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_4> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_5> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_6> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_7> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_8> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_9> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_10> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_11> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_12> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vpos_13> (without init value) has a constant value of 0 in block <m3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_13> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_12> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_11> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_10> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_9> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_8> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_7> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_6> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_5> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_4> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_3> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_2> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_1> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_0> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_0> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_1> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_2> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_3> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_4> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_5> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_6> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_7> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_8> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_9> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_10> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_11> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_12> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_13> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_0> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_0> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_1> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_1> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_2> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_2> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_3> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_3> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_4> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_4> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_5> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_5> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_6> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_6> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_7> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_7> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_8> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_8> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_9> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_9> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_10> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_10> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_11> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_11> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_12> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_12> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_B_13> is unconnected in block <Iadc>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_13> is unconnected in block <m3>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_0> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_1> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_2> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_3> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_4> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_5> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_6> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_7> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_8> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_9> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_10> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_11> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_12> is unconnected in block <Iadc2>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ADC_A_13> is unconnected in block <Iadc2>.
+WARNING:Xst:1710 - FF/Latch <min_val_13> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_12> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_11> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_10> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_9> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_8> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_7> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_6> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_5> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_4> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_3> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_2> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_1> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_0> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_13> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_12> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_11> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_10> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_9> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_8> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_7> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_6> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_5> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_4> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_3> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_2> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_1> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <max_val_0> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <dv1> is unconnected in block <m3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <m3> is unconnected in block <SEQ_DECOMPOSER>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <SCE_module>.
+	Multiplier <Mmult_num2_mult0001> in block <SCE_module> and adder/subtractor <Madd_num2_addsub0000> in block <SCE_module> are combined into a MAC<Maddsub_num2_mult0001>.
+	Multiplier <Mmult_num1_mult0003> in block <SCE_module> and adder/subtractor <Madd_num1_add0001> in block <SCE_module> are combined into a MAC<Maddsub_num1_mult0003>.
+	Multiplier <Mmult_num2_mult0000> in block <SCE_module> and adder/subtractor <Madd_num2_add0000> in block <SCE_module> are combined into a MAC<Maddsub_num2_mult0000>.
+	Multiplier <Mmult_num2_mult0003> in block <SCE_module> and adder/subtractor <Madd_num2_add0001> in block <SCE_module> are combined into a MAC<Maddsub_num2_mult0003>.
+	Multiplier <Mmult_num1_mult0002> in block <SCE_module> and adder/subtractor <Madd_num1_addsub0000> in block <SCE_module> are combined into a MAC<Maddsub_num1_mult0002>.
+	Multiplier <Mmult_num1_mult0001> in block <SCE_module> and adder/subtractor <Madd_num1_add0000> in block <SCE_module> are combined into a MAC<Maddsub_num1_mult0001>.
+Unit <SCE_module> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 6
+ 14x16-to-31-bit MAC                                   : 4
+ 14x16-to-32-bit MAC                                   : 2
+# Multipliers                                          : 7
+ 14x12-bit multiplier                                  : 1
+ 14x16-bit multiplier                                  : 2
+ 16x12-bit multiplier                                  : 1
+ 18x8-bit multiplier                                   : 2
+ 8x9-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 423
+ 15-bit adder                                          : 32
+ 15-bit adder carry out                                : 1
+ 15-bit subtractor                                     : 3
+ 16-bit adder                                          : 4
+ 16-bit subtractor                                     : 32
+ 23-bit adder                                          : 69
+ 24-bit adder                                          : 6
+ 24-bit subtractor                                     : 72
+ 31-bit adder                                          : 93
+ 32-bit adder                                          : 10
+ 32-bit subtractor                                     : 98
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+# Counters                                             : 6
+ 16-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+ 8-bit up counter                                      : 3
+# Registers                                            : 411
+ Flip-Flops                                            : 411
+# Comparators                                          : 35
+ 14-bit comparator greatequal                          : 7
+ 14-bit comparator greater                             : 2
+ 14-bit comparator less                                : 6
+ 16-bit comparator greater                             : 3
+ 16-bit comparator less                                : 2
+ 17-bit comparator greater                             : 2
+ 25-bit comparator greater                             : 3
+ 33-bit comparator greatequal                          : 5
+ 33-bit comparator greater                             : 3
+ 8-bit comparator greatequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <Vpos_7> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_8> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_9> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_10> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_11> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_12> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_13> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_0> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_1> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_2> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_3> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_4> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_5> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_6> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_7> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_8> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_9> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_10> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_11> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_12> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vneg_13> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_0> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_1> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_2> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_3> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_4> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_5> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_6> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_7> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_8> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_9> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_10> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_11> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_12> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vzero_13> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_0> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_1> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_2> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_3> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_4> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_5> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vpos_6> (without init value) has a constant value of 0 in block <SCE_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1899 - Due to constant pushing, all outputs of the instance <dv3> of the block <division_3> are unconnected in block <SCE_module>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:1899 - Due to constant pushing, all outputs of the instance <dv1> of the block <division_3> are unconnected in block <SCE_module>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_0> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_1> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_2> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_3> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_4> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_5> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_6> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_7> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_8> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_9> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_10> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_11> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_12> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vb1_13> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_0> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_1> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_2> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_3> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_4> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_5> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_6> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_7> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_8> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_9> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_10> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_11> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_12> is unconnected in block <SCE_module>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Vc1_13> is unconnected in block <SCE_module>.
+WARNING:Xst:1899 - Due to constant pushing, all outputs of the instance <dv2> of the block <division_3> are unconnected in block <SCE_module>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:1710 - FF/Latch <next_state_0> (without init value) has a constant value of 0 in block <PHASE_measure>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Vin_1_0> in Unit <AMP_measure> is equivalent to the following 13 FFs/Latches, which will be removed : <Vin_1_1> <Vin_1_2> <Vin_1_3> <Vin_1_4> <Vin_1_5> <Vin_1_6> <Vin_1_7> <Vin_1_8> <Vin_1_9> <Vin_1_10> <Vin_1_11> <Vin_1_12> <Vin_1_13> 
+INFO:Xst:2261 - The FF/Latch <Vin1_0> in Unit <PHASE_measure> is equivalent to the following 13 FFs/Latches, which will be removed : <Vin1_1> <Vin1_2> <Vin1_3> <Vin1_4> <Vin1_5> <Vin1_6> <Vin1_7> <Vin1_8> <Vin1_9> <Vin1_10> <Vin1_11> <Vin1_12> <Vin1_13> 
+WARNING:Xst:1710 - FF/Latch <Vin_1_0> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_0> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_1> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_2> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_3> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_4> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_5> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_6> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_7> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_8> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_9> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_10> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_11> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_12> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Vin_2_13> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <min_val_13> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_12> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_11> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_10> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_9> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_8> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_7> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_6> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_5> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_4> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_3> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_2> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_1> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_val_0> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_13> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_12> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_11> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_10> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_9> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_8> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_7> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_6> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_5> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_4> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_3> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_2> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_1> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <max_val_0> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Vin1_0> (without init value) has a constant value of 0 in block <PHASE_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <offset_13> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_12> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_11> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_10> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_9> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_8> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_7> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_6> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_5> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_4> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_3> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_2> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_1> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <offset_0> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_13> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_12> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_11> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_10> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_9> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_8> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_7> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_6> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_5> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_4> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_3> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_2> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_1> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <amp_0> (without init value) has a constant value of 0 in block <AMP_measure>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Vref1_0> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_1> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_2> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_3> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_4> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_5> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_6> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_7> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_8> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_9> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_10> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_11> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:2677 - Node <Vref1_12> of sequential type is unconnected in block <PHASE_measure>.
+WARNING:Xst:1710 - FF/Latch <LED_0> (without init value) has a constant value of 0 in block <SEQ_DECOMPOSER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_1> (without init value) has a constant value of 0 in block <SEQ_DECOMPOSER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_2> (without init value) has a constant value of 0 in block <SEQ_DECOMPOSER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_3> (without init value) has a constant value of 0 in block <SEQ_DECOMPOSER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_4> (without init value) has a constant value of 0 in block <SEQ_DECOMPOSER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_5> (without init value) has a constant value of 0 in block <SEQ_DECOMPOSER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_6> (without init value) has a constant value of 0 in block <SEQ_DECOMPOSER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_7> (without init value) has a constant value of 0 in block <SEQ_DECOMPOSER>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <SEQ_DECOMPOSER> ...
+
+Optimizing unit <CLOCK> ...
+
+Optimizing unit <adcread> ...
+
+Optimizing unit <division_3> ...
+
+Optimizing unit <FREQ_measure> ...
+
+Optimizing unit <PHASE_measure> ...
+WARNING:Xst:2677 - Node <m2/dclk> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iclk/clk_80k> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iclk/clk_40k> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iclk/clk_20k> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_0> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_1> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_2> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_3> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_4> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_5> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_6> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_7> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_8> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_9> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_10> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_11> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_13> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_0> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_B_12> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_1> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_2> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_3> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_4> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_5> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_6> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_8> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_9> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_7> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_10> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_11> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_12> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc2/ADC_A_13> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_0> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_1> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_2> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_3> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_4> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_5> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_6> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_7> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_8> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_9> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_10> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_11> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_13> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <Iadc/ADC_B_12> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_15> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_14> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_13> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_12> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_11> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_10> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_9> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_8> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_7> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_6> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_5> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_4> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_3> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_2> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_1> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/counter_0> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/Mmult_den_mult0001> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_15> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_14> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_13> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_12> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_11> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_10> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_9> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_8> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_7> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_6> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_5> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_4> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_3> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_2> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_1> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m3/freq_0> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/counter_7> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/counter_6> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/counter_5> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/counter_4> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/counter_3> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/counter_2> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/counter_1> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/counter_0> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_15> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_14> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_13> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_12> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_11> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_10> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_9> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_8> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_7> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_6> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_5> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_4> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_3> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_2> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_1> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/phase_0> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/state_0> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/state_1> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/state_3> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/state_2> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/Vref1_13> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/next_state_3> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/next_state_2> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+WARNING:Xst:2677 - Node <m4/m4/next_state_1> of sequential type is unconnected in block <SEQ_DECOMPOSER>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SEQ_DECOMPOSER, actual ratio is 15.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 199
+ Flip-Flops                                            : 199
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SEQ_DECOMPOSER.ngr
+Top Level Output File Name         : SEQ_DECOMPOSER
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 8415
+#      GND                         : 1
+#      INV                         : 120
+#      LUT1                        : 278
+#      LUT2                        : 506
+#      LUT3                        : 1595
+#      LUT4                        : 406
+#      LUT5                        : 602
+#      LUT6                        : 22
+#      MUXCY                       : 2418
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 2460
+# FlipFlops/Latches                : 199
+#      FD                          : 96
+#      FD_1                        : 8
+#      FDCE                        : 32
+#      FDE                         : 1
+#      FDE_1                       : 14
+#      FDR                         : 44
+#      FDS                         : 4
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 2
+#      OBUF                        : 18
+# DSPs                             : 1
+#      DSP48E                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50tff1136-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             199  out of  28800     0%  
+ Number of Slice LUTs:                 3529  out of  28800    12%  
+    Number used as Logic:              3529  out of  28800    12%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3558
+   Number with an unused Flip Flop:    3359  out of   3558    94%  
+   Number with an unused LUT:            29  out of   3558     0%  
+   Number of fully used LUT-FF pairs:   170  out of   3558     4%  
+   Number of unique control sets:        22
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  21  out of    480     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+ Number of DSP48Es:                       1  out of     48     2%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 161   |
+Iclk/clk_400k1                     | BUFG                   | 38    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 32    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 51.850ns (Maximum Frequency: 19.287MHz)
+   Minimum input arrival time before clock: 0.979ns
+   Maximum output required time after clock: 3.305ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 51.850ns (frequency: 19.287MHz)
+  Total number of paths / destination ports: 7517540351306183000000000000000000000000000000000000000 / 226
+-------------------------------------------------------------------------
+Delay:               51.850ns (Levels of Logic = 138)
+  Source:            m1/counter_15 (FF)
+  Destination:       m1/freq_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: m1/counter_15 to m1/freq_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.396   0.246  m1/counter_15 (m1/counter_15)
+     DSP48E:A16->P0       47   2.645   0.452  m1/Mmult_den_mult0001 (m1/den_mult0001<0>)
+     LUT2:I1->O            1   0.086   0.000  m1/dv1/Msub__old_p1_50_Madd_lut<0> (m1/dv1/Msub__old_p1_50_Madd_lut<0>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_50_Madd_cy<0> (m1/dv1/Msub__old_p1_50_Madd_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  m1/dv1/Msub__old_p1_50_Madd_cy<1> (m1/dv1/Msub__old_p1_50_Madd_cy<1>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_50_Madd_xor<2> (m1/dv1/_old_p1_50<2>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_51_addsub0000_Madd_lut<2> (m1/dv1/Madd_old_p1_51_addsub0000_Madd_lut<2>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_51_addsub0000_Madd_cy<2> (m1/dv1/Madd_old_p1_51_addsub0000_Madd_cy<2>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_51_addsub0000_Madd_xor<3> (m1/dv1/old_p1_51_addsub0000<3>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_53_Madd_lut<4> (m1/dv1/Msub__old_p1_53_Madd_lut<4>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_53_Madd_cy<4> (m1/dv1/Msub__old_p1_53_Madd_cy<4>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_53_Madd_xor<5> (m1/dv1/_old_p1_53<5>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_54_addsub0000_Madd_lut<5> (m1/dv1/Madd_old_p1_54_addsub0000_Madd_lut<5>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_54_addsub0000_Madd_cy<5> (m1/dv1/Madd_old_p1_54_addsub0000_Madd_cy<5>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_54_addsub0000_Madd_xor<6> (m1/dv1/old_p1_54_addsub0000<6>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_56_Madd_lut<7> (m1/dv1/Msub__old_p1_56_Madd_lut<7>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_56_Madd_cy<7> (m1/dv1/Msub__old_p1_56_Madd_cy<7>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_56_Madd_xor<8> (m1/dv1/_old_p1_56<8>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_57_addsub0000_Madd_lut<8> (m1/dv1/Madd_old_p1_57_addsub0000_Madd_lut<8>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_57_addsub0000_Madd_cy<8> (m1/dv1/Madd_old_p1_57_addsub0000_Madd_cy<8>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_57_addsub0000_Madd_xor<9> (m1/dv1/old_p1_57_addsub0000<9>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_59_Madd_lut<10> (m1/dv1/Msub__old_p1_59_Madd_lut<10>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_59_Madd_cy<10> (m1/dv1/Msub__old_p1_59_Madd_cy<10>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_59_Madd_xor<11> (m1/dv1/_old_p1_59<11>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_60_addsub0000_Madd_lut<11> (m1/dv1/Madd_old_p1_60_addsub0000_Madd_lut<11>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_60_addsub0000_Madd_cy<11> (m1/dv1/Madd_old_p1_60_addsub0000_Madd_cy<11>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_60_addsub0000_Madd_xor<12> (m1/dv1/old_p1_60_addsub0000<12>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_62_Madd_lut<13> (m1/dv1/Msub__old_p1_62_Madd_lut<13>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_62_Madd_cy<13> (m1/dv1/Msub__old_p1_62_Madd_cy<13>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_62_Madd_xor<14> (m1/dv1/_old_p1_62<14>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_63_addsub0000_Madd_lut<14> (m1/dv1/Madd_old_p1_63_addsub0000_Madd_lut<14>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_63_addsub0000_Madd_cy<14> (m1/dv1/Madd_old_p1_63_addsub0000_Madd_cy<14>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_63_addsub0000_Madd_xor<15> (m1/dv1/old_p1_63_addsub0000<15>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_65_Madd_lut<16> (m1/dv1/Msub__old_p1_65_Madd_lut<16>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_65_Madd_cy<16> (m1/dv1/Msub__old_p1_65_Madd_cy<16>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_65_Madd_xor<17> (m1/dv1/_old_p1_65<17>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_66_addsub0000_Madd_lut<17> (m1/dv1/Madd_old_p1_66_addsub0000_Madd_lut<17>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_66_addsub0000_Madd_cy<17> (m1/dv1/Madd_old_p1_66_addsub0000_Madd_cy<17>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_66_addsub0000_Madd_xor<18> (m1/dv1/old_p1_66_addsub0000<18>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_68_Madd_lut<19> (m1/dv1/Msub__old_p1_68_Madd_lut<19>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_68_Madd_cy<19> (m1/dv1/Msub__old_p1_68_Madd_cy<19>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_68_Madd_xor<20> (m1/dv1/_old_p1_68<20>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_69_addsub0000_Madd_lut<20> (m1/dv1/Madd_old_p1_69_addsub0000_Madd_lut<20>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_69_addsub0000_Madd_cy<20> (m1/dv1/Madd_old_p1_69_addsub0000_Madd_cy<20>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_69_addsub0000_Madd_xor<21> (m1/dv1/old_p1_69_addsub0000<21>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_71_Madd_lut<22> (m1/dv1/Msub__old_p1_71_Madd_lut<22>)
+     MUXCY:S->O            0   0.305   0.000  m1/dv1/Msub__old_p1_71_Madd_cy<22> (m1/dv1/Msub__old_p1_71_Madd_cy<22>)
+     XORCY:CI->O          45   0.300   0.452  m1/dv1/Msub__old_p1_71_Madd_xor<23> (m1/dv1/_old_p1_71<23>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_74_Madd_lut<1> (m1/dv1/Msub__old_p1_74_Madd_lut<1>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_74_Madd_cy<1> (m1/dv1/Msub__old_p1_74_Madd_cy<1>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_74_Madd_xor<2> (m1/dv1/_old_p1_74<2>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_75_addsub0000_Madd_lut<2> (m1/dv1/Madd_old_p1_75_addsub0000_Madd_lut<2>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_75_addsub0000_Madd_cy<2> (m1/dv1/Madd_old_p1_75_addsub0000_Madd_cy<2>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_75_addsub0000_Madd_xor<3> (m1/dv1/old_p1_75_addsub0000<3>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_77_Madd_lut<4> (m1/dv1/Msub__old_p1_77_Madd_lut<4>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_77_Madd_cy<4> (m1/dv1/Msub__old_p1_77_Madd_cy<4>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_77_Madd_xor<5> (m1/dv1/_old_p1_77<5>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_78_addsub0000_Madd_lut<5> (m1/dv1/Madd_old_p1_78_addsub0000_Madd_lut<5>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_78_addsub0000_Madd_cy<5> (m1/dv1/Madd_old_p1_78_addsub0000_Madd_cy<5>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_78_addsub0000_Madd_xor<6> (m1/dv1/old_p1_78_addsub0000<6>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_80_Madd_lut<7> (m1/dv1/Msub__old_p1_80_Madd_lut<7>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_80_Madd_cy<7> (m1/dv1/Msub__old_p1_80_Madd_cy<7>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_80_Madd_xor<8> (m1/dv1/_old_p1_80<8>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_81_addsub0000_Madd_lut<8> (m1/dv1/Madd_old_p1_81_addsub0000_Madd_lut<8>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_81_addsub0000_Madd_cy<8> (m1/dv1/Madd_old_p1_81_addsub0000_Madd_cy<8>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_81_addsub0000_Madd_xor<9> (m1/dv1/old_p1_81_addsub0000<9>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_83_Madd_lut<10> (m1/dv1/Msub__old_p1_83_Madd_lut<10>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_83_Madd_cy<10> (m1/dv1/Msub__old_p1_83_Madd_cy<10>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_83_Madd_xor<11> (m1/dv1/_old_p1_83<11>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_84_addsub0000_Madd_lut<11> (m1/dv1/Madd_old_p1_84_addsub0000_Madd_lut<11>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_84_addsub0000_Madd_cy<11> (m1/dv1/Madd_old_p1_84_addsub0000_Madd_cy<11>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_84_addsub0000_Madd_xor<12> (m1/dv1/old_p1_84_addsub0000<12>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_86_Madd_lut<13> (m1/dv1/Msub__old_p1_86_Madd_lut<13>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_86_Madd_cy<13> (m1/dv1/Msub__old_p1_86_Madd_cy<13>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_86_Madd_xor<14> (m1/dv1/_old_p1_86<14>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_87_addsub0000_Madd_lut<14> (m1/dv1/Madd_old_p1_87_addsub0000_Madd_lut<14>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_87_addsub0000_Madd_cy<14> (m1/dv1/Madd_old_p1_87_addsub0000_Madd_cy<14>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_87_addsub0000_Madd_xor<15> (m1/dv1/old_p1_87_addsub0000<15>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_89_Madd_lut<16> (m1/dv1/Msub__old_p1_89_Madd_lut<16>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_89_Madd_cy<16> (m1/dv1/Msub__old_p1_89_Madd_cy<16>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_89_Madd_xor<17> (m1/dv1/_old_p1_89<17>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_90_addsub0000_Madd_lut<17> (m1/dv1/Madd_old_p1_90_addsub0000_Madd_lut<17>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_90_addsub0000_Madd_cy<17> (m1/dv1/Madd_old_p1_90_addsub0000_Madd_cy<17>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_90_addsub0000_Madd_xor<18> (m1/dv1/old_p1_90_addsub0000<18>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_92_Madd_lut<19> (m1/dv1/Msub__old_p1_92_Madd_lut<19>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_92_Madd_cy<19> (m1/dv1/Msub__old_p1_92_Madd_cy<19>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_92_Madd_xor<20> (m1/dv1/_old_p1_92<20>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_93_addsub0000_Madd_lut<20> (m1/dv1/Madd_old_p1_93_addsub0000_Madd_lut<20>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_93_addsub0000_Madd_cy<20> (m1/dv1/Madd_old_p1_93_addsub0000_Madd_cy<20>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_93_addsub0000_Madd_xor<21> (m1/dv1/old_p1_93_addsub0000<21>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_95_Madd_lut<22> (m1/dv1/Msub__old_p1_95_Madd_lut<22>)
+     MUXCY:S->O            0   0.305   0.000  m1/dv1/Msub__old_p1_95_Madd_cy<22> (m1/dv1/Msub__old_p1_95_Madd_cy<22>)
+     XORCY:CI->O          46   0.300   0.452  m1/dv1/Msub__old_p1_95_Madd_xor<23> (m1/dv1/_old_p1_95<23>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_98_Madd_lut<1> (m1/dv1/Msub__old_p1_98_Madd_lut<1>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_98_Madd_cy<1> (m1/dv1/Msub__old_p1_98_Madd_cy<1>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_98_Madd_xor<2> (m1/dv1/_old_p1_98<2>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_99_addsub0000_Madd_lut<2> (m1/dv1/Madd_old_p1_99_addsub0000_Madd_lut<2>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_99_addsub0000_Madd_cy<2> (m1/dv1/Madd_old_p1_99_addsub0000_Madd_cy<2>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_99_addsub0000_Madd_xor<3> (m1/dv1/old_p1_99_addsub0000<3>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_101_Madd_lut<4> (m1/dv1/Msub__old_p1_101_Madd_lut<4>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_101_Madd_cy<4> (m1/dv1/Msub__old_p1_101_Madd_cy<4>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_101_Madd_xor<5> (m1/dv1/_old_p1_101<5>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_102_addsub0000_Madd_lut<5> (m1/dv1/Madd_old_p1_102_addsub0000_Madd_lut<5>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_102_addsub0000_Madd_cy<5> (m1/dv1/Madd_old_p1_102_addsub0000_Madd_cy<5>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_102_addsub0000_Madd_xor<6> (m1/dv1/old_p1_102_addsub0000<6>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_104_Madd_lut<7> (m1/dv1/Msub__old_p1_104_Madd_lut<7>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_104_Madd_cy<7> (m1/dv1/Msub__old_p1_104_Madd_cy<7>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_104_Madd_xor<8> (m1/dv1/_old_p1_104<8>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_105_addsub0000_Madd_lut<8> (m1/dv1/Madd_old_p1_105_addsub0000_Madd_lut<8>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_105_addsub0000_Madd_cy<8> (m1/dv1/Madd_old_p1_105_addsub0000_Madd_cy<8>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_105_addsub0000_Madd_xor<9> (m1/dv1/old_p1_105_addsub0000<9>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_107_Madd_lut<10> (m1/dv1/Msub__old_p1_107_Madd_lut<10>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_107_Madd_cy<10> (m1/dv1/Msub__old_p1_107_Madd_cy<10>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_107_Madd_xor<11> (m1/dv1/_old_p1_107<11>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_108_addsub0000_Madd_lut<11> (m1/dv1/Madd_old_p1_108_addsub0000_Madd_lut<11>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_108_addsub0000_Madd_cy<11> (m1/dv1/Madd_old_p1_108_addsub0000_Madd_cy<11>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_108_addsub0000_Madd_xor<12> (m1/dv1/old_p1_108_addsub0000<12>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_110_Madd_lut<13> (m1/dv1/Msub__old_p1_110_Madd_lut<13>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_110_Madd_cy<13> (m1/dv1/Msub__old_p1_110_Madd_cy<13>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_110_Madd_xor<14> (m1/dv1/_old_p1_110<14>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_111_addsub0000_Madd_lut<14> (m1/dv1/Madd_old_p1_111_addsub0000_Madd_lut<14>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_111_addsub0000_Madd_cy<14> (m1/dv1/Madd_old_p1_111_addsub0000_Madd_cy<14>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_111_addsub0000_Madd_xor<15> (m1/dv1/old_p1_111_addsub0000<15>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_113_Madd_lut<16> (m1/dv1/Msub__old_p1_113_Madd_lut<16>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_113_Madd_cy<16> (m1/dv1/Msub__old_p1_113_Madd_cy<16>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_113_Madd_xor<17> (m1/dv1/_old_p1_113<17>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_114_addsub0000_Madd_lut<17> (m1/dv1/Madd_old_p1_114_addsub0000_Madd_lut<17>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_114_addsub0000_Madd_cy<17> (m1/dv1/Madd_old_p1_114_addsub0000_Madd_cy<17>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_114_addsub0000_Madd_xor<18> (m1/dv1/old_p1_114_addsub0000<18>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_116_Madd_lut<19> (m1/dv1/Msub__old_p1_116_Madd_lut<19>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Msub__old_p1_116_Madd_cy<19> (m1/dv1/Msub__old_p1_116_Madd_cy<19>)
+     XORCY:CI->O           3   0.300   0.369  m1/dv1/Msub__old_p1_116_Madd_xor<20> (m1/dv1/_old_p1_116<20>)
+     LUT3:I2->O            1   0.086   0.000  m1/dv1/Madd_old_p1_117_addsub0000_Madd_lut<20> (m1/dv1/Madd_old_p1_117_addsub0000_Madd_lut<20>)
+     MUXCY:S->O            1   0.305   0.000  m1/dv1/Madd_old_p1_117_addsub0000_Madd_cy<20> (m1/dv1/Madd_old_p1_117_addsub0000_Madd_cy<20>)
+     XORCY:CI->O           2   0.300   0.365  m1/dv1/Madd_old_p1_117_addsub0000_Madd_xor<21> (m1/dv1/old_p1_117_addsub0000<21>)
+     LUT5:I4->O            1   0.086   0.000  m1/dv1/Msub__old_p1_119_Madd_lut<22> (m1/dv1/Msub__old_p1_119_Madd_lut<22>)
+     MUXCY:S->O            0   0.305   0.000  m1/dv1/Msub__old_p1_119_Madd_cy<22> (m1/dv1/Msub__old_p1_119_Madd_cy<22>)
+     XORCY:CI->O           1   0.300   0.235  m1/dv1/Msub__old_p1_119_Madd_xor<23> (m1/dv1/_old_p1_119<23>)
+     INV:I->O              1   0.212   0.235  m1/dv1/Res<0>1_INV_0 (m1/freq_temp<0>)
+     FDCE:D                   -0.022          m1/freq_0
+    ----------------------------------------
+    Total                     51.850ns (34.371ns logic, 17.479ns route)
+                                       (66.3% logic, 33.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Iclk/clk_400k1'
+  Clock period: 4.850ns (frequency: 206.186MHz)
+  Total number of paths / destination ports: 404 / 54
+-------------------------------------------------------------------------
+Delay:               2.425ns (Levels of Logic = 2)
+  Source:            Iadc/COUNTER_4 (FF)
+  Destination:       Iadc/ADC_A_0 (FF)
+  Source Clock:      Iclk/clk_400k1 rising
+  Destination Clock: Iclk/clk_400k1 falling
+
+  Data Path: Iadc/COUNTER_4 to Iadc/ADC_A_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              9   0.396   0.799  Iadc/COUNTER_4 (Iadc/COUNTER_4)
+     LUT5:I0->O            8   0.086   0.638  Iadc/ADC_A_0_and000021 (Iadc/N12)
+     LUT4:I0->O            1   0.086   0.235  Iadc/ADC_A_1_and00001 (Iadc/ADC_A_1_and0000)
+     FDE_1:CE                  0.185          Iadc/ADC_A_1
+    ----------------------------------------
+    Total                      2.425ns (0.753ns logic, 1.672ns route)
+                                       (31.1% logic, 68.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Iclk/clk_400k1'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              0.979ns (Levels of Logic = 1)
+  Source:            SPI_MISO (PAD)
+  Destination:       Iadc/ADC_A_0 (FF)
+  Destination Clock: Iclk/clk_400k1 falling
+
+  Data Path: SPI_MISO to Iadc/ADC_A_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   0.694   0.285  SPI_MISO_IBUF (SPI_MISO_IBUF)
+     FDE_1:D                  -0.022          Iadc/ADC_A_13
+    ----------------------------------------
+    Total                      0.979ns (0.694ns logic, 0.285ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Iclk/clk_400k1'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.305ns (Levels of Logic = 2)
+  Source:            Iadc/STOP_CLK (FF)
+  Destination:       SPI_SCK (PAD)
+  Source Clock:      Iclk/clk_400k1 falling
+
+  Data Path: Iadc/STOP_CLK to SPI_SCK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             3   0.396   0.444  Iadc/STOP_CLK (Iadc/STOP_CLK)
+     LUT2:I0->O            1   0.086   0.235  Iadc/SPI_SCK1 (SPI_SCK_OBUF)
+     OBUF:I->O                 2.144          SPI_SCK_OBUF (SPI_SCK)
+    ----------------------------------------
+    Total                      3.305ns (2.626ns logic, 0.679ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.230ns (Levels of Logic = 2)
+  Source:            Iclk/clk_400k (FF)
+  Destination:       SPI_SCK (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Iclk/clk_400k to SPI_SCK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.396   0.369  Iclk/clk_400k (Iclk/clk_400k1)
+     LUT2:I1->O            1   0.086   0.235  Iadc2/SPI_SCK1 (SPI_SCK_B2_OBUF)
+     OBUF:I->O                 2.144          SPI_SCK_B2_OBUF (SPI_SCK_B2)
+    ----------------------------------------
+    Total                      3.230ns (2.626ns logic, 0.604ns route)
+                                       (81.3% logic, 18.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 35.00 secs
+Total CPU time to Xst completion: 34.91 secs
+ 
+--> 
+
+Total memory usage is 553420 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  454 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/BTP/codes/Seq_Decomposer/test_SEQ_DECOMPOSER_isim_beh.exe" -prj "F:/BTP/codes/Seq_Decomposer/test_SEQ_DECOMPOSER_beh.prj" "work.test_SEQ_DECOMPOSER" "work.glbl" 

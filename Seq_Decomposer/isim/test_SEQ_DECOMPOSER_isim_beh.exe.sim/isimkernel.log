@@ -1,0 +1,29 @@
+Command line:
+   test_SEQ_DECOMPOSER_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53194
+
+Thu Apr 12 23:31:18 2018
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 881.066 Meg
+
+ Total Signals          : 227
+ Total Nets             : 1505
+ Total Signal Drivers   : 81
+ Total Blocks           : 45
+ Total Primitive Blocks : 26
+ Total Processes        : 131
+ Total Traceable Variables  : 350
+ Total Scalar Nets and Variables : 10040
+Total Line Count : 1032
+
+ Total Simulation Time: 1 sec
+
+ Current Memory Usage: 881.066 Meg
+
+Thu Apr 12 23:31:29 2018
+

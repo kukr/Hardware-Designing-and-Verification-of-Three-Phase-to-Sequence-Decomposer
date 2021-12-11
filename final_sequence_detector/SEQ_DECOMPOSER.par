@@ -1,0 +1,159 @@
+Release 12.4 par M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+PRAVEEN-PC::  Sun Feb 11 16:23:13 2018
+
+par -w -intstyle ise -ol high -mt off SEQ_DECOMPOSER_map.ncd SEQ_DECOMPOSER.ncd
+SEQ_DECOMPOSER.pcf 
+
+
+Constraints file: SEQ_DECOMPOSER.pcf.
+Loading device for application Rf_Device from file '5vlx50t.nph' in environment C:\Xilinx\12.4\ISE_DS\ISE\.
+   "SEQ_DECOMPOSER" is an NCD, version 3.2, device xc5vlx50t, package ff1136, speed -3
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc5vlx50t' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.72 2010-11-18".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           2 out of 32      6%
+   Number of External IOBs                  21 out of 480     4%
+      Number of LOCed IOBs                  21 out of 21    100%
+
+   Number of Slices                         27 out of 7200    1%
+   Number of Slice Registers                57 out of 28800   1%
+      Number used as Flip Flops             57
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                     87 out of 28800   1%
+   Number of Slice LUT-Flip Flop pairs      87 out of 28800   1%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
+
+WARNING:Par:288 - The signal SPI_MISO_B2_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sw_IBUF has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 365 unrouted;      REAL time: 5 secs 
+
+Phase  2  : 286 unrouted;      REAL time: 5 secs 
+
+Phase  3  : 95 unrouted;      REAL time: 6 secs 
+
+Phase  4  : 107 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Updating file: SEQ_DECOMPOSER.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+
+Updating file: SEQ_DECOMPOSER.ncd with current fully routed design.
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Total REAL time to Router completion: 9 secs 
+Total CPU time to Router completion: 9 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGCTRL_X0Y0| No   |    9 |  0.018     |  1.353      |
++---------------------+--------------+------+------+------------+-------------+
+|       Iclk/clk_400k |BUFGCTRL_X0Y31| No   |   10 |  0.055     |  1.432      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.280ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.418ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Icl | SETUP       |         N/A|     2.658ns|     N/A|           0
+  k/clk_400k                                | HOLD        |     0.335ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 13 secs 
+Total CPU time to PAR completion: 13 secs 
+
+Peak Memory Usage:  418 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 4
+Number of info messages: 1
+
+Writing design to file SEQ_DECOMPOSER.ncd
+
+
+
+PAR done!

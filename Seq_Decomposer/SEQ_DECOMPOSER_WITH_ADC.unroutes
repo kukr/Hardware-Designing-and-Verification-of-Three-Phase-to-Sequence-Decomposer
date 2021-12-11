@@ -1,0 +1,95 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Apr 15 15:48:56 2018
+
+All signals are completely routed.
+
+WARNING:ParHelpers:362 - There are 8 sourceless signals in this design. This design will not pass the DRC check run by
+   Bitgen.
+
+   digital_out<0>_OBUF
+   digital_out<1>_OBUF
+   digital_out<2>_OBUF
+   digital_out<3>_OBUF
+   digital_out<4>_OBUF
+   digital_out<5>_OBUF
+   digital_out<6>_OBUF
+   digital_out<7>_OBUF
+WARNING:ParHelpers:361 - There are 72 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   m10/m3/den<0>
+   m10/m3/den<10>
+   m10/m3/den<11>
+   m10/m3/den<12>
+   m10/m3/den<13>
+   m10/m3/den<14>
+   m10/m3/den<15>
+   m10/m3/den<16>
+   m10/m3/den<17>
+   m10/m3/den<18>
+   m10/m3/den<19>
+   m10/m3/den<1>
+   m10/m3/den<20>
+   m10/m3/den<21>
+   m10/m3/den<22>
+   m10/m3/den<23>
+   m10/m3/den<2>
+   m10/m3/den<3>
+   m10/m3/den<4>
+   m10/m3/den<5>
+   m10/m3/den<6>
+   m10/m3/den<7>
+   m10/m3/den<8>
+   m10/m3/den<9>
+   m8/m3/den<0>
+   m8/m3/den<10>
+   m8/m3/den<11>
+   m8/m3/den<12>
+   m8/m3/den<13>
+   m8/m3/den<14>
+   m8/m3/den<15>
+   m8/m3/den<16>
+   m8/m3/den<17>
+   m8/m3/den<18>
+   m8/m3/den<19>
+   m8/m3/den<1>
+   m8/m3/den<20>
+   m8/m3/den<21>
+   m8/m3/den<22>
+   m8/m3/den<23>
+   m8/m3/den<2>
+   m8/m3/den<3>
+   m8/m3/den<4>
+   m8/m3/den<5>
+   m8/m3/den<6>
+   m8/m3/den<7>
+   m8/m3/den<8>
+   m8/m3/den<9>
+   m9/m3/den<0>
+   m9/m3/den<10>
+   m9/m3/den<11>
+   m9/m3/den<12>
+   m9/m3/den<13>
+   m9/m3/den<14>
+   m9/m3/den<15>
+   m9/m3/den<16>
+   m9/m3/den<17>
+   m9/m3/den<18>
+   m9/m3/den<19>
+   m9/m3/den<1>
+   m9/m3/den<20>
+   m9/m3/den<21>
+   m9/m3/den<22>
+   m9/m3/den<23>
+   m9/m3/den<2>
+   m9/m3/den<3>
+   m9/m3/den<4>
+   m9/m3/den<5>
+   m9/m3/den<6>
+   m9/m3/den<7>
+   m9/m3/den<8>
+   m9/m3/den<9>
+
+

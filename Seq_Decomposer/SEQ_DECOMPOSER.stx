@@ -1,0 +1,57 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to F:/BTP/codes/Seq_Decomposer/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to F:/BTP/codes/Seq_Decomposer/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "division.v" in library work
+Compiling verilog file "PHASE_measure.v" in library work
+Module <division> compiled
+Compiling verilog file "FREQ_measure.v" in library work
+Module <PHASE_measure> compiled
+Compiling verilog file "FIR_order32.v" in library work
+Module <FREQ_measure> compiled
+Compiling verilog file "DC_offset_removal.v" in library work
+Module <FIR_order32> compiled
+Compiling verilog file "AMP_measure.v" in library work
+Module <DC_offset_removal> compiled
+Compiling verilog file "SCE_module.v" in library work
+Module <AMP_measure> compiled
+Compiling verilog file "FIR_filter.v" in library work
+Module <SCE_module> compiled
+Compiling verilog file "DZCPD_module.v" in library work
+Module <FIR_filter> compiled
+Compiling verilog file "ADS_module.v" in library work
+Module <DZCPD_module> compiled
+Compiling verilog file "SEQ_DECOMPOSER.v" in library work
+Module <ADS_module> compiled
+Module <SEQ_DECOMPOSER> compiled
+No errors in compilation
+Analysis of file <"SEQ_DECOMPOSER.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.49 secs
+ 
+--> 
+
+Total memory usage is 299444 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

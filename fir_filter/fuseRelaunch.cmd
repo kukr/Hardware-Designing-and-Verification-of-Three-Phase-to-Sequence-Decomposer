@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/shubh/Google Drive/Cirriculum4_1/BTP/FIR/fir_filter/tst_isim_beh.exe" -prj "C:/Users/shubh/Google Drive/Cirriculum4_1/BTP/FIR/fir_filter/tst_beh.prj" "work.tst" "work.glbl" 

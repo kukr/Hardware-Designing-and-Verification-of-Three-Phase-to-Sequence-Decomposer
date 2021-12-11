@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jan 21 23:08:37 2018
+# Process ID: 17348
+# Current directory: C:/Users/shubh/Google Drive/Cirriculum4_2/BTP/4_1work/FIR/fir_filter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6116 C:\Users\shubh\Google Drive\Cirriculum4_2\BTP\4_1work\FIR\fir_filter\tst_isim_beh.wdb
+# Log file: C:/Users/shubh/Google Drive/Cirriculum4_2/BTP/4_1work/FIR/fir_filter/vivado.log
+# Journal file: C:/Users/shubh/Google Drive/Cirriculum4_2/BTP/4_1work/FIR/fir_filter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\shubh\Google Drive\Cirriculum4_2\BTP\4_1work\FIR\fir_filter\tst_isim_beh.wdb}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+ERROR: [Wavedata 42-25] The waveform database 'C:\Users\shubh\Google Drive\Cirriculum4_2\BTP\4_1work\FIR\fir_filter\tst_isim_beh.wdb' could not be opened for the following reason: The file may be corrupt or of an unsupported older format.  As of version 2014.3 Vivado includes a new, enhanced waveform database. Because the new database is incompatible with the old database, the current version of Vivado cannot open WDB files created in versions prior to 2014.3.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 21 23:09:03 2018...

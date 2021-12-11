@@ -1,0 +1,57 @@
+
+NET "clk_100m" LOC = "AH15";
+
+///////   FOR---- ADC_BOARD_1
+NET "SPI_MOSI" LOC = "H33"; //_____ pin_2 ////-----"B4";
+NET "AMP_CS" LOC = "F34" ;  //_____ pin_4 ////-----"A4"
+NET "SPI_SCK" LOC = "H34";  //_____ pin_6 ////-----"E8"
+NET "AMP_SHDN" LOC = "G33"; //_____ pin_8 ////-----"F8"
+NET "AD_CONV" LOC = "G32" ; //_____ pin_10 ////-----"C7"
+NET "SPI_MISO" LOC = "H32" ; //_____pin_12 ////-----"D7"
+
+NET "tick2" LOC = "AG32"; ///pin  40
+
+///////   FOR---- ADC_BOARD_2
+
+NET "SPI_MOSI_B2" LOC = "AM32"; //_____ pin_60
+NET "AMP_CS_B2" LOC = "AJ34" ;  //_____ pin_58
+NET "SPI_SCK_B2" LOC = "AM33";  //_____ pin_56
+NET "AMP_SHDN_B2" LOC = "AL33"; //_____ pin_54
+NET "AD_CONV_B2" LOC = "AL34" ; //_____ pin_52
+NET "SPI_MISO_B2" LOC = "AK32" ; //_____pin_50
+
+//NET "tick_B2" LOC = "P34"; ///pin 22
+
+NET "rst" LOC =  "AK7";/// SW12   push_button_east_East 
+
+###////------ output signal for dac(_____ since A0 is MSB and A7 is LSB)
+#NET "digital_out[7]" LOC = "M32"; //_____ pin_20--------A0
+#NET "digital_out[6]" LOC = "P34"; //_____ pin_22--------A1
+#NET "digital_out[5]" LOC = "N34"; //_____ pin_24--------A2
+#NET "digital_out[4]" LOC = "AA34";//_____ pin_26--------A3
+#NET "digital_out[3]" LOC = "AD32";//_____ pin_28--------A4
+#NET "digital_out[2]" LOC = "Y34";//______pin_30---- ----A5
+#NET "digital_out[1]" LOC = "Y32";//_____ pin_32---- ----A6
+#NET "digital_out[0]" LOC = "W32";//_____ pin_34---- ----A7
+
+##////------ output signal for dac
+#NET "digital_out[0]" LOC = "M32"; //_____ pin_20--------A0
+#NET "digital_out[1]" LOC = "P34"; //_____ pin_22--------A1
+#NET "digital_out[2]" LOC = "N34"; //_____ pin_24--------A2
+#NET "digital_out[3]" LOC = "AA34";//_____ pin_26--------A3
+#NET "digital_out[4]" LOC = "AD32";//_____ pin_28--------A4
+#NET "digital_out[5]" LOC = "Y34";//______pin_30---- ----A5
+#NET "digital_out[6]" LOC = "Y32";//_____ pin_32---- ----A6
+#NET "digital_out[7]" LOC = "W32";//_____ pin_34---- ----A7
+
+
+#NET "LED[0]" LOC = "H18";
+#NET "LED[1]" LOC = "L18";
+#NET "LED[2]" LOC = "G15";
+#NET "LED[3]" LOC = "AD26";
+#NET "LED[4]" LOC = "G16";
+#NET "LED[5]" LOC = "AD25";
+#NET "LED[6]" LOC = "AD24";
+#NET "LED[7]" LOC = "AE24";
+
+
